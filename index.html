@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnglishFix - Fix Your English</title>
+    <style>
+        /* Base reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.5;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Container */
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Header */
+        header h1 {
+            font-size: 2.4em;
+            margin-bottom: 10px;
+            color: #111;
+        }
+        header p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 50px;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 40px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-3px);
+        }
+        section img {
+            max-width: 120px;
+            margin-bottom: 15px;
+        }
+        section h2 {
+            font-size: 1.6em;
+            margin-bottom: 12px;
+        }
+        section ul {
+            text-align: left;
+            max-width: 300px;
+            margin: 0 auto 20px auto;
+            padding-left: 20px;
+        }
+        section ul li {
+            margin-bottom: 8px;
+        }
+        .cta {
+            display: inline-block;
+            padding: 14px 30px;
+            font-weight: bold;
+            border-radius: 8px;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        /* Grammarly Section */
+        .grammarly {
+            background-color: #e6f5ea;
+            border-left: 6px solid #00c853;
+        }
+        .grammarly .cta {
+            background-color: #00c853;
+        }
+        .grammarly .cta:hover {
+            background-color: #009624;
+        }
+
+        /* QuillBot Section */
+        .quillbot {
+            background-color: #e6f0fa;
+            border-left: 6px solid #3b5bdb;
+        }
+        .quillbot .cta {
+            background-color: #3b5bdb;
+        }
+        .quillbot .cta:hover {
+            background-color: #2536a0;
+        }
+
+        /* Credibility Section */
+        .credibility {
+            background-color: #fff;
+            border-left: 6px solid #ff9800;
+        }
+
+        /* Footer */
+        footer {
+            font-size: 0.85em;
+            color: #777;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 500px) {
+            section ul {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Fix Your English</h1>
+            <p>Write & speak naturally. Tools I personally use to make writing effortless.</p>
+        </header>
+
+        <!-- Grammarly Section -->
+        <section class="grammarly">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Grammarly_logo.svg" alt="Grammarly Logo">
+            <h2>Grammarly</h2>
+            <ul>
+                <li>Check grammar instantly</li>
+                <li>Improve clarity & style</li>
+                <li>Works in Docs, email, social media</li>
+            </ul>
+            <a class="cta" href="https://www.grammarly.com/" target="_blank">Try Grammarly</a>
+        </section>
+
+        <!-- QuillBot Section -->
+        <section class="quillbot">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/QuillBot_logo.svg" alt="QuillBot Logo">
+            <h2>QuillBot</h2>
+            <ul>
+                <li>Paraphrase & summarize in seconds</li>
+                <li>Avoid plagiarism</li>
+                <li>Free & paid plans</li>
+            </ul>
+            <a class="cta" href="https://quillbot.com/" target="_blank">Try QuillBot</a>
+        </section>
+
+        <!-- Credibility Section -->
+        <section class="credibility">
+            <h2>Why EnglishFix?</h2>
+            <p>I help people write naturally in English, without awkward mistakes. Get tools & tips that actually work.</p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Affiliate disclaimer: I may earn a commission if you use these links at no extra cost to you.</p>
+        </footer>
+    </div>
+</body>
+</html>
