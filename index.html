@@ -1,237 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EnglishFix – Write Better English</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Fix - ESL Worksheets</title>
 
-  <style>
-    :root {
-      --bg: #f5f7fb;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --green: #16a34a;
-      --green-bg: #eaf7ef;
-      --blue: #2563eb;
-      --blue-bg: #eef3ff;
-      --card: #ffffff;
-      --radius: 14px;
-      --shadow: 0 10px 25px rgba(0,0,0,0.06);
-    }
+    <!-- Google Fonts: Carlito -->
+    <link href="https://fonts.googleapis.com/css2?family=Carlito&display=swap" rel="stylesheet">
 
-    * {
-      box-sizing: border-box;
-    }
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Carlito', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFA;
+            color: #333;
+            line-height: 1.6;
+        }
 
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-    .container {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 40px 20px 60px;
-    }
+        /* Header */
+        header {
+            background-color: #fff;
+            padding: 20px 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-    /* HERO */
-    .hero {
-      text-align: center;
-      margin-bottom: 50px;
-    }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #4A90E2;
+        }
 
-    .hero h1 {
-      font-size: 2.6rem;
-      margin-bottom: 12px;
-      letter-spacing: -0.5px;
-    }
+        nav {
+            margin-top: 10px;
+        }
 
-    .hero p {
-      font-size: 1.15rem;
-      color: var(--muted);
-      max-width: 600px;
-      margin: 0 auto;
-    }
+        nav a {
+            margin-right: 20px;
+            font-weight: bold;
+            color: #4A90E2;
+        }
 
-    /* CARDS */
-    .card {
-      background: var(--card);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 28px;
-      margin-bottom: 30px;
-    }
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #E6F0FA;
+        }
 
-    .card-header {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 12px;
-    }
+        .hero h2 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
 
-    .logo {
-      width: 44px;
-      height: 44px;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 1.1rem;
-      color: white;
-      flex-shrink: 0;
-    }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
 
-    .logo.grammarly {
-      background: linear-gradient(135deg, #22c55e, #16a34a);
-    }
+        .hero .cta {
+            background-color: #4A90E2;
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
 
-    .logo.quillbot {
-      background: linear-gradient(135deg, #3b82f6, #2563eb);
-    }
+        .hero .cta:hover {
+            background-color: #357ABD;
+        }
 
-    .card h2 {
-      margin: 0;
-      font-size: 1.5rem;
-    }
+        /* Packs Grid */
+        .packs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
 
-    .card p {
-      color: var(--muted);
-      margin: 8px 0 16px;
-    }
+        .pack-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-    .features {
-      padding-left: 18px;
-      margin-bottom: 20px;
-    }
+        .pack-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
 
-    .features li {
-      margin-bottom: 6px;
-    }
+        .pack-card img {
+            max-width: 100%;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
 
-    .cta {
-      display: inline-block;
-      padding: 14px 26px;
-      border-radius: 10px;
-      font-weight: 600;
-      color: white;
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-    }
+        .pack-card h3 {
+            margin-bottom: 10px;
+            color: #4A90E2;
+        }
 
-    .cta:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-    }
+        .pack-card p {
+            margin-bottom: 15px;
+        }
 
-    .cta.grammarly {
-      background: linear-gradient(135deg, #22c55e, #16a34a);
-    }
+        .pack-card .buy-btn {
+            background-color: #57A773;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
 
-    .cta.quillbot {
-      background: linear-gradient(135deg, #3b82f6, #2563eb);
-    }
+        .pack-card .buy-btn:hover {
+            background-color: #3D8B5E;
+        }
 
-    /* WHY */
-    .why {
-      text-align: center;
-      margin-top: 50px;
-    }
+        /* Free Sample Section */
+        .free-sample {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #DFF2E1;
+        }
 
-    .why h3 {
-      font-size: 1.6rem;
-      margin-bottom: 10px;
-    }
+        .free-sample h2 {
+            margin-bottom: 10px;
+            color: #57A773;
+        }
 
-    .why p {
-      color: var(--muted);
-      max-width: 600px;
-      margin: 0 auto;
-    }
+        .free-sample p {
+            margin-bottom: 20px;
+        }
 
-    footer {
-      margin-top: 50px;
-      font-size: 0.85rem;
-      color: var(--muted);
-      text-align: center;
-    }
+        .free-sample input[type="email"] {
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            width: 250px;
+            margin-right: 10px;
+        }
 
-    @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 2.1rem;
-      }
-    }
-  </style>
+        .free-sample button {
+            background-color: #57A773;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .free-sample button:hover {
+            background-color: #3D8B5E;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #fff;
+            color: #777;
+            margin-top: 40px;
+        }
+    </style>
 </head>
-
 <body>
-  <div class="container">
 
-    <!-- HERO -->
+    <!-- Header -->
+    <header>
+        <h1>English Fix</h1>
+        <nav>
+            <a href="#packs">Worksheets</a>
+            <a href="#free">Free Sample</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
     <section class="hero">
-      <h1>Fix Your English</h1>
-      <p>
-        Write clearly, naturally, and confidently.
-        These are the tools I actually use and recommend.
-      </p>
+        <h2>Fun, Easy-to-Use ESL Worksheets</h2>
+        <p>Download ready-made packs and start teaching English today</p>
+        <a href="#packs" class="cta">Browse Worksheets</a>
     </section>
 
-    <!-- GRAMMARLY -->
-    <section class="card">
-      <div class="card-header">
-        <div class="logo grammarly">G</div>
-        <h2>Grammarly</h2>
-      </div>
-      <p>
-        Catch grammar mistakes, improve clarity, and sound professional everywhere you write.
-      </p>
-      <ul class="features">
-        <li>Instant grammar & spelling fixes</li>
-        <li>Style and tone suggestions</li>
-        <li>Works in email, docs, and social media</li>
-      </ul>
-      <a class="cta grammarly" href="https://www.grammarly.com/" target="_blank">
-        Try Grammarly
-      </a>
+    <!-- Worksheet Packs Section -->
+    <section class="packs" id="packs">
+        <div class="pack-card">
+            <img src="placeholder-a2.jpg" alt="A2 Grammar Pack">
+            <h3>A2 Grammar Pack</h3>
+            <p>Perfect for beginner learners</p>
+            <a href="YOUR_GUMROAD_OR_PAYHIP_LINK" class="buy-btn">Buy Now</a>
+        </div>
+        <div class="pack-card">
+            <img src="placeholder-reading.jpg" alt="Reading Comprehension">
+            <h3>Reading Comprehension Pack</h3>
+            <p>Short passages and exercises</p>
+            <a href="YOUR_GUMROAD_OR_PAYHIP_LINK" class="buy-btn">Buy Now</a>
+        </div>
+        <div class="pack-card">
+            <img src="placeholder-vocab.jpg" alt="Vocabulary Pack">
+            <h3>Vocabulary Pack</h3>
+            <p>Essential words & phrases</p>
+            <a href="YOUR_GUMROAD_OR_PAYHIP_LINK" class="buy-btn">Buy Now</a>
+        </div>
+        <!-- Add more packs here -->
     </section>
 
-    <!-- QUILLBOT -->
-    <section class="card">
-      <div class="card-header">
-        <div class="logo quillbot">Q</div>
-        <h2>QuillBot</h2>
-      </div>
-      <p>
-        Rewrite, paraphrase, and summarise text instantly without sounding robotic.
-      </p>
-      <ul class="features">
-        <li>Fast paraphrasing & summarising</li>
-        <li>Helps avoid repetition & plagiarism</li>
-        <li>Great for study and work writing</li>
-      </ul>
-      <a class="cta quillbot" href="https://quillbot.com/" target="_blank">
-        Try QuillBot
-      </a>
+    <!-- Free Sample Section -->
+    <section class="free-sample" id="free">
+        <h2>Get a Free Worksheet Pack</h2>
+        <p>Sign up to receive a free sample delivered to your inbox</p>
+        <form action="YOUR_EMAIL_PROVIDER_FORM_LINK">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit">Send Me My Pack</button>
+        </form>
     </section>
 
-    <!-- WHY -->
-    <section class="why">
-      <h3>Why EnglishFix?</h3>
-      <p>
-        I help people write better English without stress.
-        No fluff. Just tools and techniques that actually work.
-      </p>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-      Affiliate disclosure: I may earn a commission if you use these links,
-      at no extra cost to you.
+    <!-- Footer -->
+    <footer id="contact">
+        &copy; 2026 English Fix | Contact: email@example.com
     </footer>
 
-  </div>
 </body>
 </html>
