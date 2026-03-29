@@ -3,239 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Fix - ESL Worksheets</title>
-
-    <!-- Google Fonts: Carlito -->
-    <link href="https://fonts.googleapis.com/css2?family=Carlito&display=swap" rel="stylesheet">
-
+    <title>Fix Your English | Best Tools & Tips 2026 - EnglishFix.net</title>
+    <meta name="description" content="Simple, honest recommendations for tools that help non-native speakers, students, and professionals write and speak more natural, confident English. Grammarly, QuillBot, and more.">
     <style>
-        /* Global Styles */
+        :root {
+            --primary: #2563eb;
+            --text: #1f2937;
+            --light: #f8fafc;
+        }
         body {
-            font-family: 'Carlito', sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #FAFAFA;
-            color: #333;
             line-height: 1.6;
+            color: var(--text);
+            background-color: #ffffff;
         }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* Header */
         header {
-            background-color: #fff;
-            padding: 20px 40px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-            color: #4A90E2;
-        }
-
-        nav {
-            margin-top: 10px;
-        }
-
-        nav a {
-            margin-right: 20px;
-            font-weight: bold;
-            color: #4A90E2;
-        }
-
-        /* Hero Section */
-        .hero {
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            color: white;
             text-align: center;
-            padding: 80px 20px;
-            background-color: #E6F0FA;
+            padding: 3rem 1rem;
         }
-
-        .hero h2 {
-            font-size: 2.2rem;
-            margin-bottom: 10px;
+        h1 {
+            font-size: 2.8rem;
+            margin: 0 0 1rem;
         }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
+        .subtitle {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto;
         }
-
-        .hero .cta {
-            background-color: #4A90E2;
-            color: #fff;
-            padding: 12px 28px;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: background-color 0.3s;
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
         }
-
-        .hero .cta:hover {
-            background-color: #357ABD;
+        .disclosure {
+            background: #fefce8;
+            border: 1px solid #facc15;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
         }
-
-        /* Packs Grid */
-        .packs {
+        .section {
+            margin: 3rem 0;
+        }
+        h2 {
+            color: #1e40af;
+            border-bottom: 3px solid #dbeafe;
+            padding-bottom: 0.5rem;
+        }
+        .tool-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 40px;
-            max-width: 1200px;
-            margin: auto;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
         }
-
-        .pack-card {
-            background-color: #fff;
-            padding: 20px;
+        .tool-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            background: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .tool-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .tool-card h3 {
+            margin-top: 0;
+            color: #1e40af;
+        }
+        .cta-button {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.9rem 1.8rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: background 0.2s;
+        }
+        .cta-button:hover {
+            background: #1e40af;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th {
+            background: #f1f5f9;
+        }
+        .tip-list {
+            background: #f8fafc;
+            padding: 1.5rem;
             border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
         }
-
-        .pack-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-        }
-
-        .pack-card img {
-            max-width: 100%;
-            border-radius: 6px;
-            margin-bottom: 15px;
-        }
-
-        .pack-card h3 {
-            margin-bottom: 10px;
-            color: #4A90E2;
-        }
-
-        .pack-card p {
-            margin-bottom: 15px;
-        }
-
-        .pack-card .buy-btn {
-            background-color: #57A773;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-
-        .pack-card .buy-btn:hover {
-            background-color: #3D8B5E;
-        }
-
-        /* Free Sample Section */
-        .free-sample {
-            text-align: center;
-            padding: 60px 20px;
-            background-color: #DFF2E1;
-        }
-
-        .free-sample h2 {
-            margin-bottom: 10px;
-            color: #57A773;
-        }
-
-        .free-sample p {
-            margin-bottom: 20px;
-        }
-
-        .free-sample input[type="email"] {
-            padding: 10px;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-            width: 250px;
-            margin-right: 10px;
-        }
-
-        .free-sample button {
-            background-color: #57A773;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 6px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .free-sample button:hover {
-            background-color: #3D8B5E;
-        }
-
-        /* Footer */
         footer {
+            background: #0f172a;
+            color: #cbd5e1;
             text-align: center;
-            padding: 30px 20px;
-            background-color: #fff;
-            color: #777;
-            margin-top: 40px;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+        }
+        @media (max-width: 640px) {
+            h1 { font-size: 2.2rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
     <header>
-        <h1>English Fix</h1>
-        <nav>
-            <a href="#packs">Worksheets</a>
-            <a href="#free">Free Sample</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <h1>Fix Your English</h1>
+        <p class="subtitle">Sound natural. Write confidently. Communicate without frustration.</p>
+        <p>Honest tools and tips for non-native speakers, professionals, students, and anyone who wants clearer, more fluent English in 2026.</p>
+        <a href="#tools" class="cta-button">See Recommended Tools</a>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Fun, Easy-to-Use ESL Worksheets</h2>
-        <p>Download ready-made packs and start teaching English today</p>
-        <a href="#packs" class="cta">Browse Worksheets</a>
-    </section>
-
-    <!-- Worksheet Packs Section -->
-    <section class="packs" id="packs">
-        <div class="pack-card">
-            <img src="placeholder-a2.jpg" alt="A2 Grammar Pack">
-            <h3>A2 Grammar Pack</h3>
-            <p>Perfect for beginner learners</p>
-            <a href="YOUR_GUMROAD_OR_PAYHIP_LINK" class="buy-btn">Buy Now</a>
+    <main>
+        <div class="disclosure">
+            <strong>Affiliate Disclosure:</strong> EnglishFix.net contains affiliate links. If you purchase through my links, I may earn a small commission at no extra cost to you. I only recommend tools I’ve tested and believe genuinely help people improve their English.
         </div>
-        <div class="pack-card">
-            <img src="placeholder-reading.jpg" alt="Reading Comprehension">
-            <h3>Reading Comprehension Pack</h3>
-            <p>Short passages and exercises</p>
-            <a href="YOUR_GUMROAD_OR_PAYHIP_LINK" class="buy-btn">Buy Now</a>
-        </div>
-        <div class="pack-card">
-            <img src="placeholder-vocab.jpg" alt="Vocabulary Pack">
-            <h3>Vocabulary Pack</h3>
-            <p>Essential words & phrases</p>
-            <a href="YOUR_GUMROAD_OR_PAYHIP_LINK" class="buy-btn">Buy Now</a>
-        </div>
-        <!-- Add more packs here -->
-    </section>
 
-    <!-- Free Sample Section -->
-    <section class="free-sample" id="free">
-        <h2>Get a Free Worksheet Pack</h2>
-        <p>Sign up to receive a free sample delivered to your inbox</p>
-        <form action="YOUR_EMAIL_PROVIDER_FORM_LINK">
-            <input type="email" placeholder="Your email" required>
-            <button type="submit">Send Me My Pack</button>
-        </form>
-    </section>
+        <section class="section">
+            <h2>Why EnglishFix.net?</h2>
+            <p>I built this site because fixing awkward English used to slow me down — emails that sounded off, reports that felt unnatural, or simple messages that took way too long to write correctly.</p>
+            <p>After testing dozens of tools, I found a small set of smart AI helpers that actually make a difference. No fluff, no overwhelming options — just what works for real people who need practical results fast.</p>
+        </section>
 
-    <!-- Footer -->
-    <footer id="contact">
-        &copy; 2026 English Fix | Contact: email@example.com
+        <section id="tools" class="section">
+            <h2>My Recommended English-Fixing Tools</h2>
+            <p>These are the tools I personally use and recommend most. Each has a strong free tier to get started.</p>
+
+            <div class="tool-grid">
+                <!-- Tool 1 -->
+                <div class="tool-card">
+                    <h3>Grammarly — Best All-Rounder</h3>
+                    <p>Catches grammar, spelling, tone, clarity, and suggests more natural phrasing. Works in your browser, email, docs, and almost everywhere you write.</p>
+                    <ul>
+                        <li>Excellent for everyday professional and casual writing</li>
+                        <li>Premium adds advanced suggestions and plagiarism check</li>
+                    </ul>
+                    <a href="https://grammarly.com/affiliates" target="_blank" rel="sponsored" class="cta-button">Try Grammarly Free →</a>
+                </div>
+
+                <!-- Tool 2 -->
+                <div class="tool-card">
+                    <h3>QuillBot — Best for Rewriting & Paraphrasing</h3>
+                    <p>Brilliant when your sentences feel awkward or repetitive. It rewords text while keeping your original meaning and helps make your English sound more natural and fluent.</p>
+                    <ul>
+                        <li>Great for essays, emails, reports, and social posts</li>
+                        <li>Strong summarizer and citation tools too</li>
+                    </ul>
+                    <a href="https://quillbot.com/affiliates" target="_blank" rel="sponsored" class="cta-button">Try QuillBot →</a>
+                </div>
+
+                <!-- Tool 3 -->
+                <div class="tool-card">
+                    <h3>LanguageTool — Multi-Language Powerhouse</h3>
+                    <p>Strong grammar and style checker that supports over 30 languages. Excellent privacy focus and great for non-native English writers who also work in other languages.</p>
+                    <ul>
+                        <li>Generous free version</li>
+                        <li>Good style and tone suggestions</li>
+                    </ul>
+                    <a href="https://languagetool.org/" target="_blank" rel="sponsored" class="cta-button">Try LanguageTool →</a>
+                </div>
+
+                <!-- Tool 4 -->
+                <div class="tool-card">
+                    <h3>ProWritingAid — Deep Style Analysis</h3>
+                    <p>Goes beyond basic fixes to analyze readability, sentence variety, repetitive words, and overall writing style. Perfect for longer documents or serious improvement.</p>
+                    <ul>
+                        <li>Excellent reports and insights</li>
+                        <li>Great for students and writers working on bigger pieces</li>
+                    </ul>
+                    <a href="https://prowritingaid.com/affiliates" target="_blank" rel="sponsored" class="cta-button">Try ProWritingAid →</a>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 3rem;">Quick Comparison</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tool</th>
+                        <th>Best For</th>
+                        <th>Free Tier</th>
+                        <th>My Take</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Grammarly</strong></td>
+                        <td>Everyday writing & tone</td>
+                        <td>Strong</td>
+                        <td>Most versatile — start here</td>
+                    </tr>
+                    <tr>
+                        <td><strong>QuillBot</strong></td>
+                        <td>Rewriting awkward text</td>
+                        <td>Good</td>
+                        <td>Makes your English sound natural fast</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LanguageTool</strong></td>
+                        <td>Multi-language + style</td>
+                        <td>Very strong</td>
+                        <td>Privacy-friendly and reliable</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ProWritingAid</strong></td>
+                        <td>In-depth style reports</td>
+                        <td>Limited</td>
+                        <td>Best for longer or academic work</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2>Quick Tips to Sound More Natural</h2>
+            <div class="tip-list">
+                <ul>
+                    <li>Read your text out loud — if it sounds strange to your ear, it probably needs fixing.</li>
+                    <li>Prefer active voice (“I wrote the report”) over passive (“The report was written by me”).</li>
+                    <li>Vary your sentence length — mix short punchy sentences with longer ones.</li>
+                    <li>Watch common non-native traps: article usage (a/an/the), prepositions, and word order.</li>
+                    <li>When in doubt, paste the sentence into one of the tools above and compare the suggestions.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Bonus Resources</h2>
+            <p>Want to go deeper? Here are a few trusted books and free practice ideas:</p>
+            <ul>
+                <li><strong>English Grammar in Use</strong> by Raymond Murphy — classic, clear explanations (great for intermediate learners).</li>
+                <li>Practice speaking with language exchange apps like italki or HelloTalk.</li>
+                <li>Watch English content with subtitles and shadow the speakers (repeat after them).</li>
+            </ul>
+            <!-- You can add Amazon affiliate links here later -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 EnglishFix.net — Helping you communicate with confidence.</p>
+        <p style="font-size: 0.9rem; margin-top: 1rem;">
+            This site is independently run and may contain affiliate links. All opinions are my own.
+        </p>
     </footer>
 
 </body>
