@@ -1,266 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fix Your English | Best Tools & Tips 2026 - EnglishFix.net</title>
-    <meta name="description" content="Simple, honest recommendations for tools that help non-native speakers, students, and professionals write and speak more natural, confident English. Grammarly, QuillBot, and more.">
-    <style>
-        :root {
-            --primary: #2563eb;
-            --text: #1f2937;
-            --light: #f8fafc;
-        }
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: var(--text);
-            background-color: #ffffff;
-        }
-        header {
-            background: linear-gradient(135deg, #1e40af, #3b82f6);
-            color: white;
-            text-align: center;
-            padding: 3rem 1rem;
-        }
-        h1 {
-            font-size: 2.8rem;
-            margin: 0 0 1rem;
-        }
-        .subtitle {
-            font-size: 1.3rem;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        main {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-        .disclosure {
-            background: #fefce8;
-            border: 1px solid #facc15;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-            font-size: 0.95rem;
-        }
-        .section {
-            margin: 3rem 0;
-        }
-        h2 {
-            color: #1e40af;
-            border-bottom: 3px solid #dbeafe;
-            padding-bottom: 0.5rem;
-        }
-        .tool-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-        .tool-card {
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 1.5rem;
-            background: white;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .tool-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        .tool-card h3 {
-            margin-top: 0;
-            color: #1e40af;
-        }
-        .cta-button {
-            display: inline-block;
-            background: var(--primary);
-            color: white;
-            padding: 0.9rem 1.8rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 1rem;
-            transition: background 0.2s;
-        }
-        .cta-button:hover {
-            background: #1e40af;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
-        }
-        th, td {
-            padding: 12px 15px;
-            text-align: left;
-            border-bottom: 1px solid #e2e8f0;
-        }
-        th {
-            background: #f1f5f9;
-        }
-        .tip-list {
-            background: #f8fafc;
-            padding: 1.5rem;
-            border-radius: 10px;
-        }
-        footer {
-            background: #0f172a;
-            color: #cbd5e1;
-            text-align: center;
-            padding: 2rem 1rem;
-            margin-top: 4rem;
-        }
-        @media (max-width: 640px) {
-            h1 { font-size: 2.2rem; }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EnglishFix | Fix Your English with Confidence</title>
+  <meta name="description" content="Discover trusted English writing tools, practical tips, and courses for non-native speakers. Improve grammar, fluency, and confidence with EnglishFix." />
+  <meta name="keywords" content="English improvement tools, Grammarly alternative, QuillBot review, improve English writing, non-native speakers" />
+  <meta name="author" content="EnglishFix" />
+  <link rel="canonical" href="https://englishfix.net/index.html" />
+  <meta property="og:title" content="EnglishFix | Fix Your English with Confidence" />
+  <meta property="og:description" content="Premium tools and practical guidance to help non-native speakers write and speak natural, professional English." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://englishfix.net/index.html" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; background: #F8FAFC; color: #0F172A; }
+    .hero-gradient { background: radial-gradient(circle at 20% 20%, #2DD4BF 0%, #14B8A6 20%, #0F766E 60%, #0F172A 120%); }
+    .fade-up { animation: fadeUp .6s ease-out both; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="fixed top-0 inset-x-0 z-50 border-b border-slate-200/70 bg-white/90 backdrop-blur-xl">
+    <div class="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a href="index.html" class="group inline-flex items-center gap-3">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-teal-700 text-white shadow-lg shadow-teal-700/20"><i class="fa-solid fa-e"></i></span>
+        <span class="text-xl font-bold tracking-tight text-slate-900">EnglishFix</span>
+      </a>
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="index.html" class="text-sm font-semibold text-teal-700">Home</a>
+        <a href="tools.html" class="text-sm font-medium text-slate-600 hover:text-teal-700">Tools</a>
+        <a href="tips.html" class="text-sm font-medium text-slate-600 hover:text-teal-700">Tips</a>
+        <a href="courses.html" class="text-sm font-medium text-slate-600 hover:text-teal-700">Courses</a>
+        <a href="about.html" class="text-sm font-medium text-slate-600 hover:text-teal-700">About</a>
+      </div>
+      <div class="hidden md:block">
+        <a href="tools.html" class="inline-flex items-center gap-2 rounded-2xl bg-teal-700 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-teal-700/20 transition hover:-translate-y-0.5 hover:bg-teal-600">Get Started Free <i class="fa-solid fa-arrow-right text-xs"></i></a>
+      </div>
+      <button id="menuBtn" class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 text-slate-700 md:hidden" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div id="mobileMenu" class="hidden border-t border-slate-200 bg-white md:hidden">
+      <div class="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-4 sm:px-6">
+        <a href="index.html" class="rounded-xl bg-slate-100 px-3 py-2 text-sm font-medium text-slate-900">Home</a>
+        <a href="tools.html" class="rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Tools</a>
+        <a href="tips.html" class="rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Tips</a>
+        <a href="courses.html" class="rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Courses</a>
+        <a href="about.html" class="rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">About</a>
+        <a href="tools.html" class="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-teal-700 px-4 py-3 text-sm font-semibold text-white hover:bg-teal-600">Get Started Free <i class="fa-solid fa-arrow-right text-xs"></i></a>
+      </div>
+    </div>
+  </nav>
 
-    <header>
-        <h1>Fix Your English</h1>
-        <p class="subtitle">Sound natural. Write confidently. Communicate without frustration.</p>
-        <p>Honest tools and tips for non-native speakers, professionals, students, and anyone who wants clearer, more fluent English in 2026.</p>
-        <a href="#tools" class="cta-button">See Recommended Tools</a>
-    </header>
-
-    <main>
-        <div class="disclosure">
-            <strong>Affiliate Disclosure:</strong> EnglishFix.net contains affiliate links. If you purchase through my links, I may earn a small commission at no extra cost to you. I only recommend tools I’ve tested and believe genuinely help people improve their English.
+  <header class="hero-gradient pt-32 pb-24 text-white">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="grid items-center gap-12 lg:grid-cols-2">
+        <div class="fade-up">
+          <p class="mb-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium">
+            <i class="fa-solid fa-sparkles"></i> Trusted recommendations for 2026
+          </p>
+          <h1 class="text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+            Fix Your English.<br />Sound Natural.<br />Communicate with Confidence.
+          </h1>
+          <p class="mt-6 max-w-xl text-lg text-teal-50">
+            EnglishFix helps non-native speakers choose the best tools, avoid expensive mistakes, and improve writing faster with practical, real-world guidance.
+          </p>
+          <div class="mt-8 flex flex-wrap items-center gap-4">
+            <a href="tools.html" class="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-teal-800 transition hover:-translate-y-0.5 hover:bg-slate-100">Explore Top Tools</a>
+            <a href="tips.html" class="rounded-2xl border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">Read Free Tips</a>
+          </div>
         </div>
-
-        <section class="section">
-            <h2>Why EnglishFix.net?</h2>
-            <p>I built this site because fixing awkward English used to slow me down — emails that sounded off, reports that felt unnatural, or simple messages that took way too long to write correctly.</p>
-            <p>After testing dozens of tools, I found a small set of smart AI helpers that actually make a difference. No fluff, no overwhelming options — just what works for real people who need practical results fast.</p>
-        </section>
-
-        <section id="tools" class="section">
-            <h2>My Recommended English-Fixing Tools</h2>
-            <p>These are the tools I personally use and recommend most. Each has a strong free tier to get started.</p>
-
-            <div class="tool-grid">
-                <!-- Tool 1 -->
-                <div class="tool-card">
-                    <h3>Grammarly — Best All-Rounder</h3>
-                    <p>Catches grammar, spelling, tone, clarity, and suggests more natural phrasing. Works in your browser, email, docs, and almost everywhere you write.</p>
-                    <ul>
-                        <li>Excellent for everyday professional and casual writing</li>
-                        <li>Premium adds advanced suggestions and plagiarism check</li>
-                    </ul>
-                    <a href="https://grammarly.com/affiliates" target="_blank" rel="sponsored" class="cta-button">Try Grammarly Free →</a>
-                </div>
-
-                <!-- Tool 2 -->
-                <div class="tool-card">
-                    <h3>QuillBot — Best for Rewriting & Paraphrasing</h3>
-                    <p>Brilliant when your sentences feel awkward or repetitive. It rewords text while keeping your original meaning and helps make your English sound more natural and fluent.</p>
-                    <ul>
-                        <li>Great for essays, emails, reports, and social posts</li>
-                        <li>Strong summarizer and citation tools too</li>
-                    </ul>
-                    <a href="https://quillbot.com/affiliates" target="_blank" rel="sponsored" class="cta-button">Try QuillBot →</a>
-                </div>
-
-                <!-- Tool 3 -->
-                <div class="tool-card">
-                    <h3>LanguageTool — Multi-Language Powerhouse</h3>
-                    <p>Strong grammar and style checker that supports over 30 languages. Excellent privacy focus and great for non-native English writers who also work in other languages.</p>
-                    <ul>
-                        <li>Generous free version</li>
-                        <li>Good style and tone suggestions</li>
-                    </ul>
-                    <a href="https://languagetool.org/" target="_blank" rel="sponsored" class="cta-button">Try LanguageTool →</a>
-                </div>
-
-                <!-- Tool 4 -->
-                <div class="tool-card">
-                    <h3>ProWritingAid — Deep Style Analysis</h3>
-                    <p>Goes beyond basic fixes to analyze readability, sentence variety, repetitive words, and overall writing style. Perfect for longer documents or serious improvement.</p>
-                    <ul>
-                        <li>Excellent reports and insights</li>
-                        <li>Great for students and writers working on bigger pieces</li>
-                    </ul>
-                    <a href="https://prowritingaid.com/affiliates" target="_blank" rel="sponsored" class="cta-button">Try ProWritingAid →</a>
-                </div>
+        <div class="fade-up rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl">
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="rounded-2xl bg-white p-5 text-slate-900">
+              <p class="text-3xl font-extrabold text-teal-700">50k+</p>
+              <p class="mt-1 text-sm text-slate-600">Readers helped yearly</p>
             </div>
-
-            <h3 style="margin-top: 3rem;">Quick Comparison</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tool</th>
-                        <th>Best For</th>
-                        <th>Free Tier</th>
-                        <th>My Take</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Grammarly</strong></td>
-                        <td>Everyday writing & tone</td>
-                        <td>Strong</td>
-                        <td>Most versatile — start here</td>
-                    </tr>
-                    <tr>
-                        <td><strong>QuillBot</strong></td>
-                        <td>Rewriting awkward text</td>
-                        <td>Good</td>
-                        <td>Makes your English sound natural fast</td>
-                    </tr>
-                    <tr>
-                        <td><strong>LanguageTool</strong></td>
-                        <td>Multi-language + style</td>
-                        <td>Very strong</td>
-                        <td>Privacy-friendly and reliable</td>
-                    </tr>
-                    <tr>
-                        <td><strong>ProWritingAid</strong></td>
-                        <td>In-depth style reports</td>
-                        <td>Limited</td>
-                        <td>Best for longer or academic work</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section class="section">
-            <h2>Quick Tips to Sound More Natural</h2>
-            <div class="tip-list">
-                <ul>
-                    <li>Read your text out loud — if it sounds strange to your ear, it probably needs fixing.</li>
-                    <li>Prefer active voice (“I wrote the report”) over passive (“The report was written by me”).</li>
-                    <li>Vary your sentence length — mix short punchy sentences with longer ones.</li>
-                    <li>Watch common non-native traps: article usage (a/an/the), prepositions, and word order.</li>
-                    <li>When in doubt, paste the sentence into one of the tools above and compare the suggestions.</li>
-                </ul>
+            <div class="rounded-2xl bg-white p-5 text-slate-900">
+              <p class="text-3xl font-extrabold text-teal-700">4.9/5</p>
+              <p class="mt-1 text-sm text-slate-600">Average tool satisfaction</p>
             </div>
-        </section>
+            <div class="rounded-2xl bg-white p-5 text-slate-900 sm:col-span-2">
+              <p class="text-sm text-slate-600">Most popular picks</p>
+              <div class="mt-2 flex items-center gap-4 text-sm font-semibold">
+                <span><i class="fa-solid fa-check text-teal-700"></i> Grammarly</span>
+                <span><i class="fa-solid fa-check text-teal-700"></i> QuillBot</span>
+                <span><i class="fa-solid fa-check text-teal-700"></i> ELSA Speak</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-        <section class="section">
-            <h2>Bonus Resources</h2>
-            <p>Want to go deeper? Here are a few trusted books and free practice ideas:</p>
-            <ul>
-                <li><strong>English Grammar in Use</strong> by Raymond Murphy — classic, clear explanations (great for intermediate learners).</li>
-                <li>Practice speaking with language exchange apps like italki or HelloTalk.</li>
-                <li>Watch English content with subtitles and shadow the speakers (repeat after them).</li>
-            </ul>
-            <!-- You can add Amazon affiliate links here later -->
-        </section>
-    </main>
+  <main>
+    <section class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+      <div class="rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm text-amber-900">
+        <strong>Affiliate Disclosure:</strong> Some links on this site are affiliate links. If you buy through them, I may earn a commission at no extra cost to you. I only recommend tools I trust for real English improvement.
+      </div>
+    </section>
 
-    <footer>
-        <p>© 2026 EnglishFix.net — Helping you communicate with confidence.</p>
-        <p style="font-size: 0.9rem; margin-top: 1rem;">
-            This site is independently run and may contain affiliate links. All opinions are my own.
-        </p>
-    </footer>
+    <section class="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Why EnglishFix?</h2>
+      <p class="mt-4 max-w-3xl text-lg text-slate-600">
+        Most learners waste time testing random apps. I review tools based on real use-cases: writing emails, essays, job applications, and daily communication. You get clear recommendations, not hype.
+      </p>
+    </section>
 
+    <section class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+      <div class="mb-8 flex items-end justify-between">
+        <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Featured Tools</h2>
+        <a href="tools.html" class="text-sm font-semibold text-teal-700 hover:text-teal-600">View full comparison →</a>
+      </div>
+      <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <article class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+          <i class="fa-solid fa-pen-ruler text-2xl text-teal-700"></i>
+          <h3 class="mt-4 text-xl font-semibold">Grammarly</h3>
+          <p class="mt-2 text-sm text-slate-600">Best for grammar, tone, and clarity in emails and work writing.</p>
+          <a href="tools.html#grammarly" class="mt-4 inline-flex text-sm font-semibold text-teal-700">Read review →</a>
+        </article>
+        <article class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+          <i class="fa-solid fa-wand-magic-sparkles text-2xl text-teal-700"></i>
+          <h3 class="mt-4 text-xl font-semibold">QuillBot</h3>
+          <p class="mt-2 text-sm text-slate-600">Great for rewriting awkward sentences and improving flow.</p>
+          <a href="tools.html#quillbot" class="mt-4 inline-flex text-sm font-semibold text-teal-700">Read review →</a>
+        </article>
+        <article class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+          <i class="fa-solid fa-language text-2xl text-teal-700"></i>
+          <h3 class="mt-4 text-xl font-semibold">DeepL Write</h3>
+          <p class="mt-2 text-sm text-slate-600">Strong alternative for polished phrasing and natural style.</p>
+          <a href="tools.html#deepl" class="mt-4 inline-flex text-sm font-semibold text-teal-700">Read review →</a>
+        </article>
+        <article class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+          <i class="fa-solid fa-microphone-lines text-2xl text-teal-700"></i>
+          <h3 class="mt-4 text-xl font-semibold">ELSA Speak</h3>
+          <p class="mt-2 text-sm text-slate-600">Best pronunciation coach for speaking confidence.</p>
+          <a href="tools.html#elsa" class="mt-4 inline-flex text-sm font-semibold text-teal-700">Read review →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">What readers say</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <blockquote class="rounded-2xl border border-slate-200 bg-white p-6 text-slate-700">“I stopped switching between random apps. The tool breakdowns saved me money and time.”</blockquote>
+        <blockquote class="rounded-2xl border border-slate-200 bg-white p-6 text-slate-700">“I used the tips for job emails and got replies faster. Super practical content.”</blockquote>
+        <blockquote class="rounded-2xl border border-slate-200 bg-white p-6 text-slate-700">“Clear, honest reviews. Finally a site that explains who each tool is actually for.”</blockquote>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">FAQ</h2>
+      <div class="mt-8 space-y-4">
+        <details class="rounded-2xl border border-slate-200 bg-white p-5">
+          <summary class="cursor-pointer font-semibold">Are these tools free?</summary>
+          <p class="mt-2 text-slate-600">Most offer free plans. Premium plans unlock advanced suggestions, tone rewrites, and deeper checks.</p>
+        </details>
+        <details class="rounded-2xl border border-slate-200 bg-white p-5">
+          <summary class="cursor-pointer font-semibold">Which tool should I start with?</summary>
+          <p class="mt-2 text-slate-600">Start with Grammarly for daily writing. Add QuillBot if you often need sentence rewrites or paraphrasing.</p>
+        </details>
+        <details class="rounded-2xl border border-slate-200 bg-white p-5">
+          <summary class="cursor-pointer font-semibold">Do affiliate links affect recommendations?</summary>
+          <p class="mt-2 text-slate-600">No. I prioritize usefulness and reliability. If a tool is weak, I mention the limitations directly.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-950 py-12 text-slate-400">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+        <div>
+          <p class="text-lg font-semibold text-white">EnglishFix</p>
+          <p class="text-sm">Helping non-native speakers communicate clearly and confidently.</p>
+        </div>
+        <div class="text-sm">
+          <a href="about.html" class="hover:text-white">Affiliate Disclosure</a> • © 2026 EnglishFix
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  </script>
 </body>
 </html>
