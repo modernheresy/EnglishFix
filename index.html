@@ -71,13 +71,18 @@
     <!-- Top Nav -->
     <header class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur">
       <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <a href="#" class="group inline-flex items-center gap-2">
-          <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-brand.blue/10 ring-1 ring-brand.blue/20">
-            <span class="text-lg font-black tracking-tight text-brand.blue">EF</span>
+        <a href="index.html" class="group inline-flex items-center gap-2">
+          <span class="inline-flex h-10 w-10 items-center justify-center overflow-hidden rounded-2xl ring-1 ring-brand.blue/20">
+            <img
+              src="Richard"
+              alt="Richard profile photo"
+              class="h-full w-full object-cover"
+              onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=&quot;text-lg font-black tracking-tight text-brand.blue&quot;>EF</span>'; this.parentElement.classList.add('bg-brand.blue/10');"
+            />
           </span>
           <div class="leading-tight">
             <div class="text-sm font-extrabold tracking-tight text-slate-900">EnglishFix.net</div>
-            <div class="text-xs text-slate-500">Honest tools for real work English</div>
+            <a href="about.html" class="text-xs text-slate-500 transition hover:text-brand.blue">About English Fix. My story.</a>
           </div>
         </a>
 
