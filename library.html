@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The EnglishFix Library | Curated Resources</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'paper': '#F9F7F2',
+                        'ink': '#2C3E50',
+                        'highlighter': '#FFF2CC',
+                        'terracotta': '#E67E22',
+                    },
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Open Sans', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'xl-plus': '24px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #F9F7F2; color: #2C3E50; scroll-behavior: smooth; }
+        .soft-shadow { box-shadow: 0 20px 40px -15px rgba(44, 62, 80, 0.1); }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="w-full border-b border-ink/5 sticky top-0 bg-paper/80 backdrop-blur-md z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg overflow-hidden shadow-lg shrink-0 border border-ink/5"> 
+                    <img src="richard.jpg" alt="Richard" class="w-full h-full object-cover">
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-bold font-serif tracking-tight text-ink leading-tight">EnglishFix</span>
+                </div>
+            </div>
+            <a href="index.html" class="text-sm font-semibold text-ink/80 hover:text-terracotta transition">Home</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="py-20 px-6">
+        <div class="max-w-4xl mx-auto text-ink">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold mb-16 text-center leading-tight">
+                The EnglishFix Library: <br class="md:hidden">Curated Tools & Resources
+            </h1>
+
+            <!-- Featured Resources Grid -->
+            <section class="mb-20">
+                <h2 class="text-3xl font-serif font-bold mb-10 border-b border-ink/10 pb-4">Featured Tools</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- LanguaTalk Card -->
+                    <div class="bg-white/40 p-8 rounded-[40px] border border-ink/5 soft-shadow flex flex-col justify-between">
+                        <div class="mb-6">
+                            <h3 class="text-2xl font-serif font-bold text-ink mb-3">LanguaTalk</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs px-3 py-1 rounded-full bg-ink/5 text-ink/60 font-sans">#Speaking</span>
+                                <span class="text-xs px-3 py-1 rounded-full bg-ink/5 text-ink/60 font-sans">#AI Practice</span>
+                                <span class="text-xs px-3 py-1 rounded-full bg-ink/5 text-ink/60 font-sans">#Tutors</span>
+                            </div>
+                            <p class="text-ink/80 leading-relaxed font-serif italic mb-4">
+                                "This tool is a game-changer for spoken English practice, offering realistic AI conversations. It's particularly strong for professionals who need to practice meeting etiquette and nuanced business discussions."
+                            </p>
+                        </div>
+                        <a href="reviews/languatalk.html" class="inline-block px-6 py-3 border-2 border-terracotta text-terracotta font-sans font-bold rounded-full transition-all hover:bg-terracotta hover:text-white hover:border-terracotta self-start">Read Full Review</a>
+                    </div>
+
+                    <!-- ProWritingAid Card -->
+                    <div class="bg-white/40 p-8 rounded-[40px] border border-ink/5 soft-shadow flex flex-col justify-between">
+                        <div class="mb-6">
+                            <h3 class="text-2xl font-serif font-bold text-ink mb-3">ProWritingAid</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs px-3 py-1 rounded-full bg-ink/5 text-ink/60 font-sans">#Writing</span>
+                                <span class="text-xs px-3 py-1 rounded-full bg-ink/5 text-ink/60 font-sans">#Grammar</span>
+                                <span class="text-xs px-3 py-1 rounded-full bg-ink/5 text-ink/60 font-sans">#Style</span>
+                            </div>
+                            <p class="text-ink/80 leading-relaxed font-serif italic mb-4">
+                                "My top pick for refining professional documents. It goes beyond basic checks to analyze your writing style, suggest improvements for clarity, and identify overused words."
+                            </p>
+                        </div>
+                        <a href="#" class="inline-block px-6 py-3 border-2 border-terracotta text-terracotta font-sans font-bold rounded-full transition-all hover:bg-terracotta hover:text-white hover:border-terracotta self-start">Check Out Tool</a>
+                    </div>
+
+                    <!-- Ludwig Card (Placeholder) -->
+                    <div class="bg-white/40 p-8 rounded-[40px] border border-ink/5 soft-shadow flex flex-col justify-between">
+                        <div class="mb-6">
+                            <h3 class="text-2xl font-serif font-bold text-ink mb-3">Ludwig</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs px-3 py-1 rounded-full bg-ink/5 text-ink/60 font-sans">#Writing</span>
+                                <span class="text-xs px-3 py-1 rounded-full bg-ink/5 text-ink/60 font-sans">#AI</span>
+                                <span class="text-xs px-3 py-1 rounded-full bg-ink/5 text-ink/60 font-sans">#Grammar</span>
+                            </div>
+                            <p class="text-ink/80 leading-relaxed font-serif italic mb-4">
+                                "An indispensable AI writing assistant that checks your sentences against millions of professional texts to ensure natural, correct usage."
+                            </p>
+                        </div>
+                        <a href="#" class="inline-block px-6 py-3 border-2 border-ink/20 text-ink/60 font-sans font-bold rounded-full transition-all hover:bg-ink/10 self-start">Coming Soon</a>
+                    </div>
+
+                    <!-- Writefull Card (Placeholder) -->
+                    <div class="bg-white/40 p-8 rounded-[40px] border border-ink/5 soft-shadow flex flex-col justify-between">
+                        <div class="mb-6">
+                            <h3 class="text-2xl font-serif font-bold text-ink mb-3">Writefull</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs px-3 py-1 rounded-full bg-ink/5 text-ink/60 font-sans">#Writing</span>
+                                <span class="text-xs px-3 py-1 rounded-full bg-ink/5 text-ink/60 font-sans">#Academic</span>
+                                <span class="text-xs px-3 py-1 rounded-full bg-ink/5 text-ink/60 font-sans">#AI</span>
+                            </div>
+                            <p class="text-ink/80 leading-relaxed font-serif italic mb-4">
+                                "Leverages AI to provide specific feedback on academic and scientific writing, ideal for publishing research papers."
+                            </p>
+                        </div>
+                        <a href="#" class="inline-block px-6 py-3 border-2 border-ink/20 text-ink/60 font-sans font-bold rounded-full transition-all hover:bg-ink/10 self-start">Coming Soon</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Broader Learning Section -->
+            <section>
+                <h2 class="text-3xl font-serif font-bold mb-10 border-b border-ink/10 pb-4">Broader Learning & Growth</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Coursera Card (Placeholder) -->
+                    <div class="bg-white/40 p-8 rounded-[40px] border border-ink/5 soft-shadow flex flex-col justify-between">
+                        <div class="mb-6">
+                            <h3 class="text-2xl font-serif font-bold text-ink mb-3">Coursera</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs px-3 py-1 rounded-full bg-ink/5 text-ink/60 font-sans">#Learning</span>
+                                <span class="text-xs px-3 py-1 rounded-full bg-ink/5 text-ink/60 font-sans">#Courses</span>
+                                <span class="text-xs px-3 py-1 rounded-full bg-ink/5 text-ink/60 font-sans">#Speaking</span>
+                            </div>
+                            <p class="text-ink/80 leading-relaxed font-serif italic mb-4">
+                                "Offers structured courses from top universities and companies, perfect for specialized business English or industry-specific communication skills."
+                            </p>
+                        </div>
+                        <a href="#" class="inline-block px-6 py-3 border-2 border-ink/20 text-ink/60 font-sans font-bold rounded-full transition-all hover:bg-ink/10 self-start">Check Out Courses</a>
+                    </div>
+
+                    <!-- Amazon Books Card (Placeholder) -->
+                    <div class="bg-white/40 p-8 rounded-[40px] border border-ink/5 soft-shadow flex flex-col justify-between">
+                        <div class="mb-6">
+                            <h3 class="text-2xl font-serif font-bold text-ink mb-3">Amazon Books</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs
