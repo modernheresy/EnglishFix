@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The EnglishFix Transparency Commitment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'paper': '#F9F7F2',
+                        'ink': '#2C3E50',
+                        'highlighter': '#FFF2CC',
+                        'terracotta': '#E67E22',
+                    },
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Open Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #F9F7F2; color: #2C3E50; scroll-behavior: smooth; }
+        .soft-shadow { box-shadow: 0 20px 40px -15px rgba(44, 62, 80, 0.1); }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="w-full border-b border-ink/5 sticky top-0 bg-paper/80 backdrop-blur-md z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg overflow-hidden shadow-lg shrink-0 border border-ink/5"> 
+                    <img src="richard.jpg" alt="Richard" class="w-full h-full object-cover">
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-bold font-serif tracking-tight text-ink leading-tight text-left">EnglishFix</span>
+                </div>
+            </div>
+            <a href="index.html" class="text-sm font-semibold text-ink/80 hover:text-terracotta transition">Home</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="py-20 px-6">
+        <article class="max-w-2xl mx-auto text-ink">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold mb-12 leading-tight">
+                The EnglishFix <span class="italic">Transparency</span> Commitment
+            </h1>
+
+            <div class="space-y-8 text-lg font-serif leading-relaxed">
+                <p>
+                    At EnglishFix, our mission is to provide high-level English learners with the best possible tools to find their professional voice. To keep our deep-dive guides and resources free for everyone, we participate in several affiliate marketing programs.
+                </p>
+
+                <div>
+                    <h2 class="text-2xl font-serif font-bold mb-4 italic">How it works:</h2>
+                    <p>
+                        When you click on a link to a tool or service recommended on this site and make a purchase, we may receive a small commission from the provider.
+                    </p>
+                </div>
+
+                <div class="pt-4">
+                    <h2 class="text-3xl font-serif font-bold mb-8">
+                        <span class="bg-highlighter px-2 py-1 rounded-sm shadow-[2px_2px_0_rgba(0,0,0,0.05)]">Our Promise to You:</span>
+                    </h2>
+                    
+                    <ul class="space-y-8">
+                        <li>
+                            <strong class="text-ink block text-xl mb-1">No Extra Cost</strong>
+                            <p class="text-ink/80">You never pay more by using our links. In fact, we often negotiate exclusive discounts for the EnglishFix community.</p>
+                        </li>
+                        <li>
+                            <strong class="text-ink block text-xl mb-1">Integrity First</strong>
+                            <p class="text-ink/80">We only recommend tools that we have personally tested and believe will genuinely help you improve your professional communication.</p>
+                        </li>
+                        <li>
+                            <strong class="text-ink block text-xl mb-1">Independence</strong>
+                            <p class="text-ink/80">Our reviews are not influenced by the commissions we receive. If a tool is difficult to use or overpriced, we will tell you.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="pt-8 italic border-t border-ink/5">
+                    Thank you for supporting the library and helping us keep these resources available to professionals worldwide.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-16 border-t border-ink/5 bg-ink/[0.02]">
+        <div class="max-w-2xl mx-auto px-6 text-center space-y-6">
+            <p class="text-xs text-ink/40 uppercase tracking-widest">
+                &copy; 2024 EnglishFix AI &bull; Education for the Global Professional
+            </p>
+            <p class="text-[11px] text-ink/30 leading-relaxed max-w-lg mx-auto italic">
+                Quality education requires independence. This transparency commitment ensures you can trust every recommendation found in our library.
+            </p>
+            <div class="pt-4">
+                <p class="font-bold text-ink">Richard</p>
+                <p class="text-[10px] text-ink/40 uppercase tracking-widest mt-1">Founder, EnglishFix</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
