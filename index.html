@@ -1,984 +1,179 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name='impact-site-verification' value='b00e646e-b16e-477d-9f1d-2c02615aa175'>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EnglishFix.net — Sound Natural & Confident at Work</title>
-    <meta
-      name="description"
-      content="EnglishFix helps non-native professionals write natural, confident English for emails, job applications, and daily work—using honest reviews of tools that actually save time."
-    />
-
-    <!-- Tailwind CDN -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnglishFix | Elevate Your Professional Voice</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Tailwind config (custom palette + fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              brand: {
-                blue: "#0ea5e9", // blue-600
-                emerald: "#10b981",
-                amber: "#f59e0b",
-              },
-            },
-            fontFamily: {
-              sans: [
-                "ui-sans-serif",
-                "system-ui",
-                "-apple-system",
-                "Segoe UI",
-                "Roboto",
-                "Inter",
-                "Helvetica",
-                "Arial",
-                "Apple Color Emoji",
-                "Segoe UI Emoji",
-              ],
-            },
-            boxShadow: {
-              soft: "0 10px 25px rgba(2, 8, 23, 0.08)",
-              glowBlue: "0 18px 45px rgba(14, 165, 233, 0.22)",
-              glowEmerald: "0 18px 45px rgba(16, 185, 129, 0.22)",
-              glowAmber: "0 18px 45px rgba(245, 158, 11, 0.22)",
-            },
-            keyframes: {
-              floaty: {
-                "0%, 100%": { transform: "translateY(0px)" },
-                "50%": { transform: "translateY(-6px)" },
-              },
-            },
-            animation: {
-              floaty: "floaty 6s ease-in-out infinite",
-            },
-          },
-        },
-      };
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'paper': '#F9F7F2',
+                        'ink': '#2C3E50',
+                        'highlighter': '#FFF2CC',
+                        'terracotta': '#E67E22',
+                    },
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Open Sans', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'xl-plus': '24px',
+                    }
+                }
+            }
+        }
     </script>
-
     <style>
-      /* Small polish that plays nicely with Tailwind */
-      ::selection {
-        background: rgba(14, 165, 233, 0.25);
-      }
+        body { background-color: #F9F7F2; color: #2C3E50; scroll-behavior: smooth; }
+        .soft-shadow { box-shadow: 0 20px 40px -15px rgba(44, 62, 80, 0.1); }
+        .book-gradient { background: linear-gradient(135deg, #E67E22 0%, #D35400 100%); }
     </style>
-  </head>
+</head>
+<body class="font-sans antialiased">
 
-  <body class="bg-slate-50 text-slate-900 antialiased">
-    <!-- Top Nav -->
-    <header class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur">
-      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <a href="index.html" class="group inline-flex items-center gap-2">
-          <span class="inline-flex h-10 w-10 items-center justify-center overflow-hidden rounded-2xl ring-1 ring-brand.blue/20">
-            <img
-              src="Richard"
-              alt="Richard profile photo"
-              class="h-full w-full object-cover"
-              onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=&quot;text-lg font-black tracking-tight text-brand.blue&quot;>EF</span>'; this.parentElement.classList.add('bg-brand.blue/10');"
-            />
-          </span>
-          <div class="leading-tight">
-            <div class="text-sm font-extrabold tracking-tight text-slate-900">EnglishFix.net</div>
-            <a href="about.html" class="text-xs text-slate-500 transition hover:text-brand.blue">About English Fix. My story.</a>
-          </div>
-        </a>
-
-        <nav class="hidden items-center gap-7 text-sm font-semibold text-slate-700 md:flex">
-          <a href="#featured" class="hover:text-slate-900">Featured Tools</a>
-          <a href="#why" class="hover:text-slate-900">Why EnglishFix</a>
-          <a href="#bonus" class="hover:text-slate-900">Free Checklist</a>
-          <a href="tools.html" class="hover:text-slate-900">All Reviews</a>
-        </nav>
-
-        <div class="flex items-center gap-3">
-          <a
-            href="#featured"
-            class="hidden rounded-2xl bg-slate-900 px-4 py-2 text-sm font-bold text-white shadow-soft hover:bg-slate-800 md:inline-flex"
-          >
-            See Top Tools
-          </a>
-          <a
-            href="#featured"
-            class="inline-flex items-center justify-center rounded-2xl bg-brand.amber px-4 py-2 text-sm font-extrabold text-slate-900 shadow-glowAmber ring-1 ring-brand.amber/30 hover:brightness-95"
-          >
-            Discover Free →
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <!-- HERO -->
-    <section class="relative overflow-hidden">
-      <!-- background glow -->
-      <div aria-hidden="true" class="pointer-events-none absolute inset-0">
-        <div class="absolute -top-24 left-1/2 h-[520px] w-[900px] -translate-x-1/2 rounded-full bg-brand.blue/15 blur-3xl"></div>
-        <div class="absolute -bottom-44 right-[-180px] h-[520px] w-[520px] rounded-full bg-brand.emerald/15 blur-3xl"></div>
-      </div>
-
-      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-        <div class="grid items-center gap-10 lg:grid-cols-2">
-          <!-- Left copy -->
-          <div>
-            <div class="flex flex-wrap items-center gap-2">
-              <div class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-soft ring-1 ring-slate-200">
-                <span class="inline-flex h-2 w-2 rounded-full bg-brand.emerald"></span>
-                Built for busy non-native professionals
-              </div>
-              <div class="inline-flex items-center gap-2 rounded-full bg-brand.amber/15 px-4 py-2 text-sm font-bold text-slate-800 ring-1 ring-brand.amber/25">
-                <span>⚡</span>
-                Tools tested & updated April 2026
-              </div>
+    <!-- Navigation -->
+    <nav class="w-full border-b border-ink/5 sticky top-0 bg-paper/80 backdrop-blur-md z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg overflow-hidden shadow-lg shrink-0 border border-ink/5"> 
+                    <img src="richard.jpg" alt="Richard" class="w-full h-full object-cover">
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-bold font-serif tracking-tight text-ink leading-tight">EnglishFix</span>
+                    <a href="about.html" class="text-[10px] font-bold uppercase tracking-widest text-terracotta hover:text-ink transition-colors">About Richard</a>
+                </div>
             </div>
+            <div class="hidden md:flex items-center gap-10 text-sm font-semibold text-ink/80">
+                <a href="#tools" class="hover:text-terracotta transition">Curated Tools</a>
+                <a href="#transparency" class="hover:text-terracotta transition">Our Mission</a>
+                <button class="bg-ink text-paper px-8 py-3 rounded-full transition hover:bg-terracotta shadow-md">Get the Guide</button>
+            </div>
+        </div>
+    </nav>
 
-            <h1 class="mt-6 text-4xl font-black tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-              Native-Level Work English,
-              <span class="text-brand.blue">Instantly Confident</span> and Career-Boosting
+    <!-- Hero / Lead Magnet Section -->
+    <main class="pt-16 pb-24 px-6">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+            <span class="inline-block bg-highlighter text-ink px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-8 border border-ink/5">Free Educational Resource</span>
+            <h1 class="text-4xl md:text-6xl font-serif font-bold mb-8 text-ink leading-tight">
+                Your English should match <br class="hidden md:block"> the <span class="italic underline decoration-terracotta/30">caliber</span> of your ideas.
             </h1>
-
-            <p class="mt-5 max-w-xl text-lg leading-relaxed text-slate-700">
-              Stop second-guessing every email.
-              <span class="font-bold text-slate-900">Write naturally, faster, and with authority</span>
-              so colleagues trust your message the first time.
+            <p class="text-lg md:text-xl text-ink/70 max-w-2xl mx-auto leading-relaxed">
+                I’ve spent a decade helping global professionals find their executive voice. Start your transformation with my most requested resource.
             </p>
-            <p class="mt-3 max-w-xl text-lg leading-relaxed text-slate-700">
-              EnglishFix helps you pick the right tools to
-              <span class="font-bold text-slate-900">save hours, earn respect, and feel proud</span>
-              of every message you send.
-            </p>
+        </div>
 
-            <div class="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <a
-                href="#featured"
-                class="inline-flex items-center justify-center rounded-2xl bg-brand.blue px-8 py-4 text-lg font-black text-white shadow-glowBlue ring-1 ring-brand.blue/30 transition hover:-translate-y-0.5 hover:brightness-95"
-              >
-                Discover the Best Tools Free →
-              </a>
-
-              <a
-                href="tools.html"
-                class="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3 text-base font-extrabold text-slate-900 shadow-soft ring-1 ring-slate-200 transition hover:bg-slate-50"
-              >
-                View All Reviews
-              </a>
-            </div>
-
-            <!-- Trust bar -->
-            <div class="mt-8 rounded-3xl bg-white p-5 shadow-soft ring-1 ring-slate-200">
-              <div class="flex flex-col gap-3 text-sm text-slate-700 sm:flex-row sm:items-center sm:justify-between">
-                <div class="flex items-center gap-2">
-                  <span class="text-lg">✅</span>
-                  <span class="font-extrabold text-slate-900">Trusted by 50,000+ learners</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="text-lg">⭐</span>
-                  <span class="font-extrabold text-slate-900">4.9/5 average reader rating</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="text-lg">🧾</span>
-                  <span class="font-extrabold text-slate-900">Independent, honest recommendations</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Micro-proof chips -->
-            <div class="mt-6 flex flex-wrap gap-2">
-              <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-slate-700 ring-1 ring-slate-200">Emails that get faster replies</span>
-              <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-slate-700 ring-1 ring-slate-200">Executive-ready reports</span>
-              <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-slate-700 ring-1 ring-slate-200">Stronger job applications</span>
-              <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-slate-700 ring-1 ring-slate-200">Confident meeting communication</span>
-              <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-slate-700 ring-1 ring-slate-200">Less rewriting, more results</span>
-            </div>
-          </div>
-
-          <!-- Right visual -->
-          <div class="relative">
-            <div class="absolute -inset-6 rounded-[2.25rem] bg-gradient-to-br from-brand.blue/20 via-white to-brand.emerald/15 blur-2xl"></div>
-
-            <div class="relative overflow-hidden rounded-[2.25rem] bg-white shadow-soft ring-1 ring-slate-200">
-              <div class="flex items-center justify-between border-b border-slate-200 bg-slate-50 px-5 py-4">
-                <div class="flex items-center gap-2">
-                  <span class="h-3 w-3 rounded-full bg-red-400"></span>
-                  <span class="h-3 w-3 rounded-full bg-amber-400"></span>
-                  <span class="h-3 w-3 rounded-full bg-emerald-400"></span>
-                </div>
-                <div class="text-xs font-semibold text-slate-600">Before → After (Work Email)</div>
-                <div class="text-xs font-semibold text-brand.blue">EnglishFix preview</div>
-              </div>
-
-              <div class="grid gap-0 lg:grid-cols-2">
-                <div class="border-b border-slate-200 p-6 lg:border-b-0 lg:border-r">
-                  <div class="mb-3 inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-slate-700">
-                    <span>😬</span> Before
-                  </div>
-                  <p class="text-sm leading-relaxed text-slate-700">
-                    “Hello, I am writing to you about the report. I did it yesterday but I think is not good.
-                    Can you check and tell me what you think? I want to make it more professional.”
-                  </p>
-
-                  <div class="mt-5 rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
-                    <div class="text-xs font-bold text-slate-700">Common problems</div>
-                    <ul class="mt-2 space-y-1 text-xs text-slate-600">
-                      <li>• Sounds uncertain (“I think is not good”)</li>
-                      <li>• Wordy and indirect</li>
-                      <li>• Not executive-friendly</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="p-6">
-                  <div class="mb-3 inline-flex items-center gap-2 rounded-full bg-brand.emerald/10 px-3 py-1 text-xs font-bold text-brand.emerald ring-1 ring-brand.emerald/20">
-                    <span>🔥</span> After
-                  </div>
-                  <p class="text-sm leading-relaxed text-slate-800">
-                    “Hi Alex — I’ve attached the updated report. Could you review sections 2–3 and let me know
-                    if anything should be adjusted before we share it with leadership? Thanks.”
-                  </p>
-
-                  <div class="mt-5 grid gap-3 sm:grid-cols-2">
-                    <div class="rounded-2xl bg-white p-4 ring-1 ring-slate-200">
-                      <div class="text-xs font-extrabold text-slate-900">Tone</div>
-                      <div class="mt-1 text-xs text-slate-600">Confident, clear, professional</div>
+        <!-- Lead Magnet Card -->
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-[48px] p-8 md:p-16 soft-shadow border border-ink/5 relative">
+                <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+                    <!-- Book Visual -->
+                    <div class="w-full md:w-5/12 perspective-1000">
+                        <div class="book-gradient aspect-[3/4] rounded-r-2xl rounded-l-md shadow-2xl flex flex-col justify-between p-8 text-paper transform -rotate-2 hover:rotate-0 transition-all duration-500 cursor-pointer group">
+                            <div class="flex justify-between items-start">
+                                <div class="w-10 h-1 bg-paper/30 rounded"></div>
+                                <span class="text-[10px] font-bold tracking-widest opacity-60 uppercase">Vol. 01</span>
+                            </div>
+                            <div>
+                                <h2 class="font-serif text-3xl font-bold leading-tight group-hover:scale-105 transition-transform">50 Phrases to Stop Sounding Like a Student.</h2>
+                                <div class="h-1 w-12 bg-highlighter mt-6"></div>
+                            </div>
+                            <p class="text-[10px] font-bold uppercase tracking-widest opacity-70">A Guide to Executive Emails</p>
+                        </div>
                     </div>
-                    <div class="rounded-2xl bg-white p-4 ring-1 ring-slate-200">
-                      <div class="text-xs font-extrabold text-slate-900">Time saved</div>
-                      <div class="mt-1 text-xs text-slate-600">Rewrite in seconds, not hours</div>
+                    
+                    <!-- Signup Form -->
+                    <div class="w-full md:w-7/12 space-y-8">
+                        <div class="space-y-4">
+                            <h3 class="text-3xl font-serif font-bold text-ink italic">The "Email Professionalism" PDF</h3>
+                            <p class="text-ink/70 leading-relaxed italic">
+                                "Learn to swap 'I'm sorry to bother you' for 'Thank you for your patience' and 49 other high-impact shifts."
+                            </p>
+                        </div>
+                        
+                        <form class="space-y-4">
+                            <div class="relative">
+                                <input type="email" placeholder="Email address" class="w-full px-8 py-5 rounded-xl-plus border-2 border-paper bg-paper text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-terracotta/20 focus:border-terracotta transition-all">
+                            </div>
+                            <button class="w-full py-5 bg-terracotta hover:bg-ink text-white rounded-xl-plus font-bold text-lg transition-all shadow-lg shadow-terracotta/20 hover:shadow-ink/20 active:scale-[0.98]">
+                                Send Me the Free Guide
+                            </button>
+                            <div class="flex items-center justify-center gap-2 text-xs text-ink/40">
+                                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"></path></svg>
+                                <span>No spam. Just one high-value lesson every Tuesday.</span>
+                            </div>
+                        </form>
                     </div>
-                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-                  <div class="mt-6 flex items-center gap-3">
-                    <img
-                      class="h-10 w-10 rounded-full ring-2 ring-white"
-                      src="https://i.pravatar.cc/80?img=12"
-                      alt="Professional avatar placeholder"
-                      loading="lazy"
-                    />
-                    <div class="text-sm">
-                      <div class="font-bold text-slate-900">“This finally sounds like me—on my best day.”</div>
-                      <div class="text-xs text-slate-600">— Samira, Project Manager</div>
+    <!-- Curated Tools Section -->
+    <section id="tools" class="py-24 px-6 bg-ink/[0.02] border-y border-ink/5">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-16 text-center">
+                <h2 class="text-4xl font-serif font-bold mb-4">The Librarian's Toolkit</h2>
+                <p class="text-ink/60 max-w-lg mx-auto italic">Personal recommendations for those who want to master the craft of professional writing.</p>
+            </div>
+            
+            <div class="grid gap-8">
+                <div class="bg-white p-8 rounded-[32px] border border-ink/5 flex flex-col md:flex-row items-start gap-8 hover:border-terracotta/30 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-paper flex items-center justify-center shrink-0 border border-ink/5 text-2xl group-hover:bg-terracotta group-hover:text-white transition-colors">01</div>
+                    <div class="flex-grow">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold font-serif">ProWritingAid</h3>
+                            <a href="#" class="text-terracotta font-bold text-sm underline decoration-2 underline-offset-4">Check Pricing</a>
+                        </div>
+                        <p class="text-ink/70 leading-relaxed italic">"While others use basic spellcheckers, ProWritingAid acts as a style editor. It’s the closest thing to having a real writing coach by your side for long-form reports."</p>
                     </div>
-                  </div>
                 </div>
-              </div>
 
-              <div class="border-t border-slate-200 bg-slate-50 p-5">
-                <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                  <div class="text-sm font-semibold text-slate-700">
-                    Pick the right tool for your goal: <span class="text-slate-900">write</span>, <span class="text-slate-900">rephrase</span>, <span class="text-slate-900">translate</span>, or <span class="text-slate-900">speak</span>.
-                  </div>
-                  <a
-                    href="#featured"
-                    class="inline-flex items-center justify-center rounded-2xl bg-brand.amber px-5 py-2.5 text-sm font-extrabold text-slate-900 shadow-glowAmber ring-1 ring-brand.amber/30 hover:brightness-95"
-                  >
-                    See Featured Tools →
-                  </a>
+                <div class="bg-white p-8 rounded-[32px] border border-ink/5 flex flex-col md:flex-row items-start gap-8 hover:border-terracotta/30 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-paper flex items-center justify-center shrink-0 border border-ink/5 text-2xl group-hover:bg-terracotta group-hover:text-white transition-colors">02</div>
+                    <div class="flex-grow">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold font-serif">LanguaTalk</h3>
+                            <a href="#" class="text-terracotta font-bold text-sm underline decoration-2 underline-offset-4">Check Pricing</a>
+                        </div>
+                        <p class="text-ink/70 leading-relaxed italic">"For those who write well but freeze in meetings. Their AI conversation tool is revolutionary for practicing professional speech in a zero-judgment environment."</p>
+                    </div>
                 </div>
-              </div>
             </div>
-
-            <!-- Decorative image strip -->
-            <div class="mt-6 grid gap-4 sm:grid-cols-2">
-              <div class="overflow-hidden rounded-3xl bg-white shadow-soft ring-1 ring-slate-200">
-                <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=70"
-                  alt="Professionals collaborating in a meeting"
-                  class="h-40 w-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-              <div class="overflow-hidden rounded-3xl bg-white shadow-soft ring-1 ring-slate-200">
-                <img
-                  src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=70"
-                  alt="Person writing on a laptop"
-                  class="h-40 w-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- Pain Points -->
-    <section class="py-14 lg:py-18">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="grid gap-10 lg:grid-cols-12 lg:items-start">
-          <div class="lg:col-span-5">
-            <h2 class="text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">
-              Struggling With Your English? <span class="text-brand.blue">You’re Not Alone.</span>
-            </h2>
-            <p class="mt-4 text-lg leading-relaxed text-slate-700">
-              Many talented professionals speak great English—but still lose confidence when writing emails, reports, or job applications.
-              The problem usually isn’t “grammar.” It’s naturalness, tone, and speed.
+    <!-- Transparency Section -->
+    <section id="transparency" class="py-24 px-6">
+        <div class="max-w-2xl mx-auto text-center space-y-8">
+            <div class="w-12 h-px bg-terracotta mx-auto"></div>
+            <h2 class="text-3xl font-serif font-bold italic">Building Trust through Transparency</h2>
+            <p class="text-ink/70 leading-relaxed font-serif italic text-lg">
+                "EnglishFix exists to level the playing field for non-native speakers. To keep our high-quality guides free for everyone, we partner with the software companies we truly use and respect. If you purchase through our links, we may earn a small commission—at no extra cost to you. This keeps the library open for all."
             </p>
-            <p class="mt-4 text-lg font-semibold text-slate-900">
-              The good news? You don’t need perfect grammar — you need these smart tools.
-            </p>
-          </div>
-
-          <div class="lg:col-span-7">
-            <div class="grid gap-4 sm:grid-cols-2">
-              <div class="rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-200">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-brand.amber/15 ring-1 ring-brand.amber/25">
-                    <span class="text-xl">✍️</span>
-                  </div>
-                  <div class="text-base font-extrabold text-slate-900">Emails feel “awkward”</div>
-                </div>
-                <p class="mt-3 text-sm leading-relaxed text-slate-600">
-                  You know what you mean, but the tone lands too direct, too soft, or just… not native.
-                </p>
-              </div>
-
-              <div class="rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-200">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-brand.blue/15 ring-1 ring-brand.blue/25">
-                    <span class="text-xl">⏱️</span>
-                  </div>
-                  <div class="text-base font-extrabold text-slate-900">You rewrite for too long</div>
-                </div>
-                <p class="mt-3 text-sm leading-relaxed text-slate-600">
-                  A “2-minute email” becomes 20 minutes of second-guessing every sentence.
-                </p>
-              </div>
-
-              <div class="rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-200">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-brand.emerald/15 ring-1 ring-brand.emerald/25">
-                    <span class="text-xl">🧠</span>
-                  </div>
-                  <div class="text-base font-extrabold text-slate-900">You sound less confident than you are</div>
-                </div>
-                <p class="mt-3 text-sm leading-relaxed text-slate-600">
-                  Your ideas are strong—but your writing doesn’t show it (yet).
-                </p>
-              </div>
-
-              <div class="rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-200">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-900/10 ring-1 ring-slate-900/15">
-                    <span class="text-xl">📄</span>
-                  </div>
-                  <div class="text-base font-extrabold text-slate-900">Job applications feel risky</div>
-                </div>
-                <p class="mt-3 text-sm leading-relaxed text-slate-600">
-                  You worry a small phrasing issue could cost interviews—so you play it safe and sound generic.
-                </p>
-              </div>
-
-              <div class="rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-200 sm:col-span-2">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-brand.blue/15 ring-1 ring-brand.blue/25">
-                    <span class="text-xl">💬</span>
-                  </div>
-                  <div class="text-base font-extrabold text-slate-900">Meetings + speaking: you translate in your head</div>
-                </div>
-                <p class="mt-3 text-sm leading-relaxed text-slate-600">
-                  You’re fluent, but you want smoother delivery, better pronunciation, and fewer “uhm” moments—especially with clients and leadership.
-                </p>
-              </div>
+            <div class="pt-4">
+                <p class="font-bold text-ink">— Richard</p>
+                <p class="text-xs text-ink/40 uppercase tracking-widest mt-1">Founder, EnglishFix</p>
             </div>
-
-            <div class="mt-6 rounded-3xl bg-gradient-to-r from-brand.blue/10 via-white to-brand.emerald/10 p-6 ring-1 ring-slate-200">
-              <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                <div>
-                  <div class="text-sm font-extrabold text-slate-900">What EnglishFix does (honestly)</div>
-                  <div class="mt-1 text-sm text-slate-700">
-                    We test tools on real work tasks—emails, reports, job apps—and show you which ones are worth your time.
-                  </div>
-                </div>
-                <a
-                  href="#featured"
-                  class="inline-flex items-center justify-center rounded-2xl bg-brand.emerald px-5 py-2.5 text-sm font-extrabold text-white shadow-glowEmerald ring-1 ring-brand.emerald/30 hover:brightness-95"
-                >
-                  Show me the best ones →
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- Featured Tools -->
-    <section id="featured" class="py-14 lg:py-18">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
-          <div class="max-w-2xl">
-            <h2 class="text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">
-              The Only 4 Tools Non‑Native Professionals Need to <span class="text-brand.blue">Sound Fluent & Confident at Work</span>
-            </h2>
-            <p class="mt-4 text-lg leading-relaxed text-slate-700">
-              Tested & updated April 2026 — these tools deliver real results right now:
-              faster writing, stronger tone, and messages that earn respect.
-            </p>
-          </div>
-
-          <div class="rounded-3xl bg-white p-5 shadow-soft ring-1 ring-slate-200">
-            <div class="text-sm font-extrabold text-slate-900">Quick goals</div>
-            <div class="mt-2 flex flex-wrap gap-2 text-xs font-semibold">
-              <span class="rounded-full bg-brand.blue/10 px-3 py-1 text-brand.blue ring-1 ring-brand.blue/20">Save 30–60 minutes daily</span>
-              <span class="rounded-full bg-brand.emerald/10 px-3 py-1 text-brand.emerald ring-1 ring-brand.emerald/20">Sound confident instantly</span>
-              <span class="rounded-full bg-brand.amber/10 px-3 py-1 text-slate-900 ring-1 ring-brand.amber/25">Win more opportunities</span>
-            </div>
-          </div>
+    <footer class="py-16 border-t border-ink/5 text-center text-ink/40 text-xs tracking-widest uppercase">
+        <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 mb-8 px-6">
+            <a href="disclosure.html" class="hover:text-terracotta hover:underline transition-all">Affiliate Disclosure</a>
+            <span class="opacity-50">&bull;</span>
+            <a href="privacy.html" class="hover:text-terracotta hover:underline transition-all">Privacy Policy</a>
+            <span class="opacity-50">&bull;</span>
+            <a href="terms.html" class="hover:text-terracotta hover:underline transition-all">Terms of Service</a>
         </div>
-
-        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <!-- Grammarly -->
-          <article
-            class="group relative overflow-hidden rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-glowBlue"
-          >
-            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand.blue via-brand.emerald to-brand.amber opacity-70"></div>
-            <div class="mb-3 inline-flex items-center gap-2 rounded-full bg-brand.blue/10 px-3 py-1 text-xs font-bold text-brand.blue ring-1 ring-brand.blue/20">
-              <span>🎯</span> Best for: high-stakes emails & client communication
-            </div>
-
-            <div class="flex items-center gap-3">
-              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand.blue/15 ring-1 ring-brand.blue/25">
-                <img
-                  src="https://picsum.photos/seed/grammarly/64/64"
-                  alt="Grammarly logo placeholder"
-                  class="h-8 w-8 rounded-xl object-cover"
-                  loading="lazy"
-                />
-              </div>
-              <div>
-                <div class="text-sm font-extrabold text-slate-900">Grammarly</div>
-                <div class="text-xs font-semibold text-slate-500">Best for polished work emails</div>
-              </div>
-            </div>
-
-            <h3 class="mt-5 text-lg font-black tracking-tight text-slate-900">
-              Sound Executive-Clear in Every Email
-            </h3>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">
-              Turn rough drafts into polished, confident messages fast — perfect when you need to sound trusted by managers, clients, and recruiters.
-            </p>
-
-            <ul class="mt-4 space-y-2 text-sm text-slate-700">
-              <li class="flex gap-2"><span>✅</span><span><span class="font-bold text-slate-900">Fix awkward tone instantly</span> (too direct, too soft, too vague)</span></li>
-              <li class="flex gap-2"><span>✅</span><span><span class="font-bold text-slate-900">Write faster under pressure</span> with fewer rewrites</span></li>
-              <li class="flex gap-2"><span>✅</span><span><span class="font-bold text-slate-900">Look more professional</span> in emails, updates, and proposals</span></li>
-            </ul>
-
-            <div class="mt-6 space-y-2">
-              <a
-                href="tools.html#grammarly"
-                class="inline-flex w-full items-center justify-center rounded-2xl bg-brand.blue px-4 py-2.5 text-sm font-extrabold text-white ring-1 ring-brand.blue/30 hover:brightness-95"
-              >
-                Read Full Review →
-              </a>
-              <a
-                href="tools.html#grammarly"
-                class="inline-flex w-full items-center justify-center rounded-2xl bg-brand.emerald px-4 py-2.5 text-xs font-extrabold text-white shadow-glowEmerald ring-1 ring-brand.emerald/30 hover:brightness-95"
-              >
-                Try Free Now →
-              </a>
-            </div>
-          </article>
-
-          <!-- QuillBot -->
-          <article
-            class="group relative overflow-hidden rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-glowEmerald"
-          >
-            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand.emerald via-brand.blue to-brand.amber opacity-70"></div>
-            <div class="mb-3 inline-flex items-center gap-2 rounded-full bg-brand.emerald/10 px-3 py-1 text-xs font-bold text-brand.emerald ring-1 ring-brand.emerald/20">
-              <span>🎯</span> Best for: rephrasing awkward English in seconds
-            </div>
-
-            <div class="flex items-center gap-3">
-              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand.emerald/15 ring-1 ring-brand.emerald/25">
-                <img
-                  src="https://picsum.photos/seed/quillbot/64/64"
-                  alt="QuillBot logo placeholder"
-                  class="h-8 w-8 rounded-xl object-cover"
-                  loading="lazy"
-                />
-              </div>
-              <div>
-                <div class="text-sm font-extrabold text-slate-900">QuillBot</div>
-                <div class="text-xs font-semibold text-slate-500">Best for rephrasing fast</div>
-              </div>
-            </div>
-
-            <h3 class="mt-5 text-lg font-black tracking-tight text-slate-900">
-              Rewrite Awkward Lines into Fluent English
-            </h3>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">
-              When your idea is clear but your sentence sounds off, QuillBot gives you natural, concise phrasing that sounds confident immediately.
-            </p>
-
-            <ul class="mt-4 space-y-2 text-sm text-slate-700">
-              <li class="flex gap-2"><span>✅</span><span><span class="font-bold text-slate-900">Instant rewrites</span> when you feel stuck or unsure</span></li>
-              <li class="flex gap-2"><span>✅</span><span><span class="font-bold text-slate-900">Sharper phrasing</span> for job apps, reports, and LinkedIn</span></li>
-              <li class="flex gap-2"><span>✅</span><span><span class="font-bold text-slate-900">Save serious time</span> without losing your original meaning</span></li>
-            </ul>
-
-            <div class="mt-6 space-y-2">
-              <a
-                href="tools.html#quillbot"
-                class="inline-flex w-full items-center justify-center rounded-2xl bg-brand.emerald px-4 py-2.5 text-sm font-extrabold text-white ring-1 ring-brand.emerald/30 hover:brightness-95"
-              >
-                Read Full Review →
-              </a>
-              <a
-                href="tools.html#quillbot"
-                class="inline-flex w-full items-center justify-center rounded-2xl bg-brand.blue px-4 py-2.5 text-xs font-extrabold text-white shadow-glowBlue ring-1 ring-brand.blue/30 hover:brightness-95"
-              >
-                Try Free Now →
-              </a>
-            </div>
-          </article>
-
-          <!-- DeepL Write -->
-          <article
-            class="group relative overflow-hidden rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-glowBlue"
-          >
-            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand.blue via-slate-900 to-brand.emerald opacity-70"></div>
-            <div class="mb-3 inline-flex items-center gap-2 rounded-full bg-slate-900/10 px-3 py-1 text-xs font-bold text-slate-800 ring-1 ring-slate-900/15">
-              <span>🎯</span> Best for: natural business phrasing that feels native
-            </div>
-
-            <div class="flex items-center gap-3">
-              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand.blue/15 ring-1 ring-brand.blue/25">
-                <img
-                  src="https://picsum.photos/seed/deepl/64/64"
-                  alt="DeepL Write logo placeholder"
-                  class="h-8 w-8 rounded-xl object-cover"
-                  loading="lazy"
-                />
-              </div>
-              <div>
-                <div class="text-sm font-extrabold text-slate-900">DeepL Write</div>
-                <div class="text-xs font-semibold text-slate-500">Best for clean, natural phrasing</div>
-              </div>
-            </div>
-
-            <h3 class="mt-5 text-lg font-black tracking-tight text-slate-900">
-              Sound Naturally Fluent, Not Translated
-            </h3>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">
-              DeepL Write is ideal when your English is correct but still feels unnatural. It smooths phrasing so your message reads native-level.
-            </p>
-
-            <ul class="mt-4 space-y-2 text-sm text-slate-700">
-              <li class="flex gap-2"><span>✅</span><span><span class="font-bold text-slate-900">Replace “weird” phrases</span> with natural alternatives</span></li>
-              <li class="flex gap-2"><span>✅</span><span><span class="font-bold text-slate-900">Improve readability</span> for managers and global teams</span></li>
-              <li class="flex gap-2"><span>✅</span><span><span class="font-bold text-slate-900">Boost confidence</span> before pressing send</span></li>
-            </ul>
-
-            <div class="mt-6 space-y-2">
-              <a
-                href="tools.html#deepl-write"
-                class="inline-flex w-full items-center justify-center rounded-2xl bg-slate-900 px-4 py-2.5 text-sm font-extrabold text-white ring-1 ring-slate-900/20 hover:bg-slate-800"
-              >
-                Read Full Review →
-              </a>
-              <a
-                href="tools.html#deepl-write"
-                class="inline-flex w-full items-center justify-center rounded-2xl bg-brand.blue px-4 py-2.5 text-xs font-extrabold text-white shadow-glowBlue ring-1 ring-brand.blue/30 hover:brightness-95"
-              >
-                Try Free Now →
-              </a>
-            </div>
-          </article>
-
-          <!-- ELSA Speak -->
-          <article
-            class="group relative overflow-hidden rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-glowAmber"
-          >
-            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand.amber via-brand.emerald to-brand.blue opacity-70"></div>
-            <div class="mb-3 inline-flex items-center gap-2 rounded-full bg-brand.amber/15 px-3 py-1 text-xs font-bold text-slate-800 ring-1 ring-brand.amber/25">
-              <span>🎯</span> Best for: pronunciation and meeting confidence
-            </div>
-
-            <div class="flex items-center gap-3">
-              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand.amber/15 ring-1 ring-brand.amber/25">
-                <img
-                  src="https://picsum.photos/seed/elsa/64/64"
-                  alt="ELSA Speak logo placeholder"
-                  class="h-8 w-8 rounded-xl object-cover"
-                  loading="lazy"
-                />
-              </div>
-              <div>
-                <div class="text-sm font-extrabold text-slate-900">ELSA Speak</div>
-                <div class="text-xs font-semibold text-slate-500">Best for pronunciation & confidence</div>
-              </div>
-            </div>
-
-            <h3 class="mt-5 text-lg font-black tracking-tight text-slate-900">
-              Speak Clearly and Command the Room
-            </h3>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">
-              If you freeze in meetings or worry about pronunciation, ELSA helps you sound clearer, sharper, and more confident with daily guided practice.
-            </p>
-
-            <ul class="mt-4 space-y-2 text-sm text-slate-700">
-              <li class="flex gap-2"><span>✅</span><span><span class="font-bold text-slate-900">Real pronunciation feedback</span> you can apply today</span></li>
-              <li class="flex gap-2"><span>✅</span><span><span class="font-bold text-slate-900">Short daily drills</span> that fit busy work schedules</span></li>
-              <li class="flex gap-2"><span>✅</span><span><span class="font-bold text-slate-900">Speak with authority</span> in calls, interviews, and presentations</span></li>
-            </ul>
-
-            <div class="mt-6 space-y-2">
-              <a
-                href="tools.html#elsa-speak"
-                class="inline-flex w-full items-center justify-center rounded-2xl bg-brand.amber px-4 py-2.5 text-sm font-extrabold text-slate-900 ring-1 ring-brand.amber/30 hover:brightness-95"
-              >
-                Read Full Review →
-              </a>
-              <a
-                href="tools.html#elsa-speak"
-                class="inline-flex w-full items-center justify-center rounded-2xl bg-brand.emerald px-4 py-2.5 text-xs font-extrabold text-white shadow-glowEmerald ring-1 ring-brand.emerald/30 hover:brightness-95"
-                >
-                Try Free Now →
-              </a>
-            </div>
-          </article>
-        </div>
-
-        <div class="mt-10 flex flex-col items-center justify-center gap-4">
-          <p class="max-w-2xl text-center text-sm text-slate-600">
-            Every recommendation is tested on real non-native work scenarios (emails, job applications, reports, meetings) — not hype.
-            Some links are affiliate links, so we may earn a commission at no extra cost to you. That support helps us keep EnglishFix independent and free.
-          </p>
-          <a
-            href="tools.html"
-            class="inline-flex items-center justify-center rounded-2xl bg-brand.blue px-9 py-4 text-lg font-black text-white shadow-glowBlue ring-1 ring-brand.blue/30 transition hover:-translate-y-0.5 hover:brightness-95"
-          >
-            See Full Comparison & Get Started Free →
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why / Trust -->
-    <section id="why" class="py-14 lg:py-18">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="grid gap-10 lg:grid-cols-12 lg:items-start">
-          <div class="lg:col-span-5">
-            <h2 class="text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">
-              Why <span class="text-brand.emerald">EnglishFix</span>?
-            </h2>
-            <p class="mt-4 text-lg leading-relaxed text-slate-700">
-              You don’t need “more English.” You need faster results in the moments that matter—sending an email, applying for a job, presenting an update, replying to a client.
-            </p>
-
-            <div class="mt-7 space-y-4">
-              <div class="rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-200">
-                <div class="text-sm font-extrabold text-slate-900">Honest curation (no hype)</div>
-                <p class="mt-2 text-sm leading-relaxed text-slate-600">
-                  We focus on what works for non-native professionals: naturalness, tone, clarity, and time saved.
-                </p>
-              </div>
-
-              <div class="rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-200">
-                <div class="text-sm font-extrabold text-slate-900">Real use-cases</div>
-                <p class="mt-2 text-sm leading-relaxed text-slate-600">
-                  Email replies, reports, job applications, LinkedIn messages, client updates—tested with real scenarios.
-                </p>
-              </div>
-
-              <div class="rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-200">
-                <div class="text-sm font-extrabold text-slate-900">You stay in control</div>
-                <p class="mt-2 text-sm leading-relaxed text-slate-600">
-                  Tools should support your voice—not replace it. We show you where each tool is strongest (and where it isn’t).
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="lg:col-span-7">
-            <div class="rounded-[2.25rem] bg-gradient-to-br from-brand.blue/10 via-white to-brand.emerald/10 p-8 ring-1 ring-slate-200">
-              <div class="flex items-center justify-between gap-6">
-                <div>
-                  <div class="text-sm font-extrabold text-slate-900">Social proof</div>
-                  <div class="mt-1 text-sm text-slate-700">
-                    Realistic outcomes from professionals who want to sound fluent at work.
-                  </div>
-                </div>
-                <a
-                  href="#bonus"
-                  class="hidden rounded-2xl bg-brand.emerald px-5 py-2.5 text-sm font-extrabold text-white shadow-glowEmerald ring-1 ring-brand.emerald/30 hover:brightness-95 sm:inline-flex"
-                >
-                  Get the free checklist →
-                </a>
-              </div>
-
-              <div class="mt-8 grid gap-6 md:grid-cols-3">
-                <figure class="rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-200">
-                  <div class="flex items-center gap-3">
-                    <img class="h-10 w-10 rounded-full" src="https://i.pravatar.cc/80?img=32" alt="Avatar" loading="lazy" />
-                    <figcaption>
-                      <div class="text-sm font-extrabold text-slate-900">Diego</div>
-                      <div class="text-xs font-semibold text-slate-500">Spain • Product Analyst</div>
-                    </figcaption>
-                  </div>
-                  <blockquote class="mt-4 text-sm leading-relaxed text-slate-700">
-                    “My emails stopped sounding hesitant. I’m faster, clearer, and I don’t overthink every line anymore.”
-                  </blockquote>
-                  <div class="mt-4 text-xs font-bold text-brand.blue">Result: clearer tone + time saved</div>
-                </figure>
-
-                <figure class="rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-200">
-                  <div class="flex items-center gap-3">
-                    <img class="h-10 w-10 rounded-full" src="https://i.pravatar.cc/80?img=47" alt="Avatar" loading="lazy" />
-                    <figcaption>
-                      <div class="text-sm font-extrabold text-slate-900">Min‑ji</div>
-                      <div class="text-xs font-semibold text-slate-500">Korea • Marketing</div>
-                    </figcaption>
-                  </div>
-                  <blockquote class="mt-4 text-sm leading-relaxed text-slate-700">
-                    “I finally sound natural in client messages. It’s not perfect English—it’s confident English.”
-                  </blockquote>
-                  <div class="mt-4 text-xs font-bold text-brand.emerald">Result: more native‑like phrasing</div>
-                </figure>
-
-                <figure class="rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-200">
-                  <div class="flex items-center gap-3">
-                    <img class="h-10 w-10 rounded-full" src="https://i.pravatar.cc/80?img=15" alt="Avatar" loading="lazy" />
-                    <figcaption>
-                      <div class="text-sm font-extrabold text-slate-900">Amina</div>
-                      <div class="text-xs font-semibold text-slate-500">UAE • Job Seeker</div>
-                    </figcaption>
-                  </div>
-                  <blockquote class="mt-4 text-sm leading-relaxed text-slate-700">
-                    “My cover letter became sharper and more professional. I got more replies—and felt proud sending it.”
-                  </blockquote>
-                  <div class="mt-4 text-xs font-bold text-brand.amber">Result: stronger applications</div>
-                </figure>
-              </div>
-
-              <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                <div class="text-sm font-semibold text-slate-700">
-                  Want the fastest win? Start with the tool that matches your goal.
-                </div>
-                <div class="flex gap-3">
-                  <a
-                    href="#featured"
-                    class="inline-flex items-center justify-center rounded-2xl bg-brand.blue px-5 py-2.5 text-sm font-extrabold text-white shadow-glowBlue ring-1 ring-brand.blue/30 hover:brightness-95"
-                  >
-                    Pick a tool →
-                  </a>
-                  <a
-                    href="tools.html"
-                    class="inline-flex items-center justify-center rounded-2xl bg-white px-5 py-2.5 text-sm font-extrabold text-slate-900 shadow-soft ring-1 ring-slate-200 hover:bg-slate-50"
-                  >
-                    See all reviews
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="mt-6 grid gap-4 sm:grid-cols-2">
-              <div class="rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-200">
-                <div class="text-sm font-extrabold text-slate-900">Our promise</div>
-                <p class="mt-2 text-sm leading-relaxed text-slate-600">
-                  Clear recommendations, transparent pros/cons, and practical examples you can copy into real work messages.
-                </p>
-              </div>
-              <div class="rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-200">
-                <div class="text-sm font-extrabold text-slate-900">No pressure</div>
-                <p class="mt-2 text-sm leading-relaxed text-slate-600">
-                  Start free. If a tool doesn’t fit your workflow, we’ll point you to a better option.
-                </p>
-              </div>
-            </div>
-
-            <div class="mt-6 sm:hidden">
-              <a
-                href="#bonus"
-                class="inline-flex w-full items-center justify-center rounded-2xl bg-brand.emerald px-6 py-3 text-base font-extrabold text-white shadow-glowEmerald ring-1 ring-brand.emerald/30 hover:brightness-95"
-              >
-                Get the free checklist →
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Lead Magnet / Bonus -->
-    <section id="bonus" class="py-14 lg:py-18">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="relative overflow-hidden rounded-[2.25rem] bg-white shadow-soft ring-1 ring-slate-200">
-          <div aria-hidden="true" class="absolute inset-0">
-            <div class="absolute -top-24 left-[-120px] h-[380px] w-[380px] rounded-full bg-brand.blue/15 blur-3xl"></div>
-            <div class="absolute -bottom-28 right-[-140px] h-[420px] w-[420px] rounded-full bg-brand.amber/15 blur-3xl"></div>
-          </div>
-
-          <div class="relative grid gap-10 p-8 lg:grid-cols-12 lg:p-12">
-            <div class="lg:col-span-7">
-              <div class="inline-flex items-center gap-2 rounded-full bg-brand.emerald/10 px-4 py-2 text-sm font-semibold text-brand.emerald ring-1 ring-brand.emerald/20">
-                <span>🎁</span> Free career-boosting checklist
-              </div>
-
-              <h2 class="mt-6 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">
-                Steal My Free Checklist:
-                <span class="text-brand.blue">Fix the 10 Most Common Non‑Native Email Mistakes</span>
-                Before You Hit Send
-              </h2>
-
-              <p class="mt-4 text-lg leading-relaxed text-slate-700">
-                Copy-paste fixes you can use today. Sound more natural and confident in minutes, not weeks.
-                Use it before your next important client email, manager update, or job application.
-              </p>
-              <p class="mt-3 text-sm font-semibold text-slate-700">
-                Downloaded by <span class="font-black text-slate-900">12,000+ professionals this month</span> and used before high-stakes emails.
-              </p>
-
-              <div class="mt-6 flex flex-wrap gap-2">
-                <span class="rounded-full bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 ring-1 ring-slate-200">✅ Instant tone upgrades</span>
-                <span class="rounded-full bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 ring-1 ring-slate-200">✅ Natural phrasing swaps</span>
-                <span class="rounded-full bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 ring-1 ring-slate-200">✅ Copy-ready confident templates</span>
-              </div>
-            </div>
-
-            <div class="lg:col-span-5">
-              <div class="rounded-[2.25rem] bg-slate-50 p-6 ring-1 ring-slate-200">
-                <div class="flex items-center justify-between">
-                  <div class="text-sm font-extrabold text-slate-900">Get instant access now</div>
-                  <div class="text-xs font-semibold text-slate-500">Free • practical • immediate</div>
-                </div>
-                <div class="mt-3 rounded-2xl bg-white p-3 text-xs font-semibold text-slate-700 ring-1 ring-slate-200">
-                  “I used this before sending a client update and sounded instantly more confident.” — Lina, Operations Lead
-                </div>
-
-                <form class="mt-5 space-y-3" action="#" method="post">
-                  <label class="block">
-                    <span class="text-xs font-bold text-slate-700">Name</span>
-                    <input
-                      name="name"
-                      type="text"
-                      placeholder="Your name"
-                      class="mt-1 w-full rounded-2xl bg-white px-4 py-3 text-sm font-semibold text-slate-900 ring-1 ring-slate-200 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand.blue/50"
-                      autocomplete="name"
-                      required
-                    />
-                  </label>
-
-                  <label class="block">
-                    <span class="text-xs font-bold text-slate-700">Email</span>
-                    <input
-                      name="email"
-                      type="email"
-                      placeholder="you@company.com"
-                      class="mt-1 w-full rounded-2xl bg-white px-4 py-3 text-sm font-semibold text-slate-900 ring-1 ring-slate-200 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand.blue/50"
-                      autocomplete="email"
-                      required
-                    />
-                  </label>
-
-                  <button
-                    type="submit"
-                    class="mt-2 inline-flex w-full items-center justify-center rounded-2xl bg-brand.amber px-6 py-4 text-lg font-black text-slate-900 shadow-glowAmber ring-1 ring-brand.amber/30 transition hover:-translate-y-0.5 hover:brightness-95"
-                  >
-                    Send Me the Free Checklist →
-                  </button>
-
-                  <p class="text-xs font-semibold leading-relaxed text-slate-700">
-                    Instant download • Zero spam • Unsubscribe anytime
-                  </p>
-                  <p class="text-xs leading-relaxed text-slate-600">
-                    By subscribing, you agree to receive emails from EnglishFix. We may include affiliate links in content.
-                  </p>
-                </form>
-              </div>
-
-              <div class="mt-4 grid gap-3 sm:grid-cols-2">
-                <div class="rounded-3xl bg-white p-4 ring-1 ring-slate-200">
-                  <div class="text-xs font-extrabold text-slate-900">2-Minute Upgrade</div>
-                  <div class="mt-1 text-xs text-slate-600">Use it right before you hit send</div>
-                </div>
-                <div class="rounded-3xl bg-white p-4 ring-1 ring-slate-200">
-                  <div class="text-xs font-extrabold text-slate-900">Real-World Scripts</div>
-                  <div class="mt-1 text-xs text-slate-600">Client emails, reports, and job apps</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="border-t border-slate-200 bg-white">
-      <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div class="grid gap-10 md:grid-cols-12">
-          <div class="md:col-span-5">
-            <div class="flex items-center gap-3">
-              <div class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-brand.blue/10 ring-1 ring-brand.blue/20">
-                <span class="text-lg font-black tracking-tight text-brand.blue">EF</span>
-              </div>
-              <div>
-                <div class="text-sm font-extrabold text-slate-900">EnglishFix.net</div>
-                <div class="text-xs text-slate-500">Tools to sound fluent at work</div>
-              </div>
-            </div>
-
-            <p class="mt-4 max-w-md text-sm leading-relaxed text-slate-600">
-              Helping non-native professionals write and speak more naturally—so your confidence matches your skills.
-            </p>
-          </div>
-
-          <div class="md:col-span-7">
-            <div class="grid gap-8 sm:grid-cols-3">
-              <div>
-                <div class="text-sm font-extrabold text-slate-900">Explore</div>
-                <ul class="mt-3 space-y-2 text-sm font-semibold text-slate-600">
-                  <li><a class="hover:text-slate-900" href="#featured">Featured tools</a></li>
-                  <li><a class="hover:text-slate-900" href="tools.html">All reviews</a></li>
-                  <li><a class="hover:text-slate-900" href="#bonus">Free checklist</a></li>
-                </ul>
-              </div>
-
-              <div>
-                <div class="text-sm font-extrabold text-slate-900">Popular use‑cases</div>
-                <ul class="mt-3 space-y-2 text-sm font-semibold text-slate-600">
-                  <li><a class="hover:text-slate-900" href="#featured">Work emails</a></li>
-                  <li><a class="hover:text-slate-900" href="#featured">Reports & updates</a></li>
-                  <li><a class="hover:text-slate-900" href="#featured">Job applications</a></li>
-                </ul>
-              </div>
-
-              <div>
-                <div class="text-sm font-extrabold text-slate-900">Legal</div>
-                <ul class="mt-3 space-y-2 text-sm font-semibold text-slate-600">
-                  <li><a class="hover:text-slate-900" href="#affiliate-disclosure">Affiliate disclosure</a></li>
-                  <li><a class="hover:text-slate-900" href="#">Privacy (placeholder)</a></li>
-                  <li><a class="hover:text-slate-900" href="#">Contact (placeholder)</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="affiliate-disclosure" class="mt-10 rounded-3xl bg-slate-50 p-6 ring-1 ring-slate-200">
-          <div class="text-sm font-extrabold text-slate-900">Affiliate Disclosure</div>
-          <p class="mt-2 text-sm leading-relaxed text-slate-600">
-            EnglishFix.net may earn a commission if you click certain links and purchase a product. This does not increase your cost.
-            We only recommend tools we believe are genuinely useful for non-native professionals. Our opinions are our own.
-          </p>
-        </div>
-
-        <div class="mt-10 flex flex-col gap-3 border-t border-slate-200 pt-8 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            © <span id="year"></span> EnglishFix.net. All rights reserved.
-          </div>
-          <div class="flex flex-wrap gap-3">
-            <span class="inline-flex items-center gap-2"><span>🛡️</span>Warm, honest guidance</span>
-            <span class="inline-flex items-center gap-2"><span>⚡</span>Practical results fast</span>
-          </div>
-        </div>
-      </div>
-
-      <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-      </script>
+        <p>&copy; 2024 EnglishFix AI &bull; Education for the Global Professional</p>
     </footer>
-  </body>
+
+</body>
 </html>
