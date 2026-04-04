@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /reviews/
+Allow: /assets/
+
+# Block only the specific PDF
+Disallow: /assets/50-phrases-executive-guide.pdf
+
+# Hide the "Thank You" page
+Disallow: /success.html
