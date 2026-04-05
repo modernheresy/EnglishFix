@@ -1,11 +1,18 @@
 User-agent: *
 Allow: /
-Allow: /style.css
-Allow: /fonts/
-Allow: /richard.webp
-
-# Block the "Thank You" page to keep it out of search results
 Disallow: /success.html
 
-# Link to your sitemap (Crucial for 100 SEO score)
+# Specifically targeting common AI Crawlers instead of using the "Content-Signal" tag
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
 Sitemap: https://englishfix.net/sitemap.xml
