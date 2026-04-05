@@ -1,10 +1,11 @@
 User-agent: *
 Allow: /
-Allow: /reviews/
-Allow: /assets/
+Allow: /style.css
+Allow: /fonts/
+Allow: /richard.webp
 
-# Block only the specific PDF
-Disallow: /assets/50-phrases-executive-guide.pdf
-
-# Hide the "Thank You" page
+# Block the "Thank You" page to keep it out of search results
 Disallow: /success.html
+
+# Link to your sitemap (Crucial for 100 SEO score)
+Sitemap: https://englishfix.net/sitemap.xml
