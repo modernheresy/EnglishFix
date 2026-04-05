@@ -1,0 +1,12 @@
+{
+  "name": "english-fix",
+  "version": "1.0.0",
+  "description": "Production build for EnglishFix Website",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./style.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "@tailwindcss/typography": "^0.5.10"
+  }
+}
