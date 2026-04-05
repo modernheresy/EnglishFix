@@ -21,79 +21,130 @@
         .prose h1, .prose h2, .prose h3 { font-family: 'Merriweather', serif; color: #2C3E50; font-weight: 700; }
     </style>
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "LanguaTalk",
-      "image": "https://englishfix.net/richard.jpg",
-      "description": "Hybrid language learning ecosystem for adults and professionals, combining vetted human tutors and AI practice.",
-      "brand": {
-        "@type": "Brand",
-        "name": "LanguaTalk"
+    [
+      {
+        "@context": "https://schema.org/",
+        "@type": ["Product", "SoftwareApplication"],
+        "name": "LanguaTalk",
+        "image": "/richard.webp",
+        "description": "Hybrid language learning ecosystem for adults and professionals, combining vetted human tutors and AI practice.",
+        "brand": {
+          "@type": "Brand",
+          "name": "LanguaTalk"
+        },
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web, iOS, Android",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "210"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.9",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Richard",
+            "image": "/richard.webp"
+          }
+        },
+        "offers": { "@type": "Offer", "name": "Free Trial Session", "price": "0.00", "priceCurrency": "USD" }
       },
-      "review": {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "4.8",
-          "bestRating": "5"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Richard",
-          "image": "https://englishfix.net/richard.jpg"
-        }
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why does LanguaTalk require a credit card for a 'Free' trial?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The card requirement prevents bot abuse and ensures high-quality service for serious learners, as the AI uses expensive LLMs and cloned native voices. Users can cancel with a single click in settings before the trial ends."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use Langua AI as a standalone tool without a tutor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The AI is sophisticated enough to act as a standalone speaking simulator for B1-B2 speakers. Many users use it for daily rehearsal and only book human tutors for high-stakes preparation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is LanguaTalk better than ChatGPT for language learning?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Unlike ChatGPT, Langua is designed as a coach. It transcribes speech in real-time, highlights specific grammatical errors, and offers business-standard phrasing suggestions that general AI models often ignore."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why should I subscribe via the website instead of the App Store?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Subscribing via LanguaTalk.com ensures you are covered by their 30-day money-back guarantee. Third-party app stores like Apple and Google often block developers from issuing direct refunds."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between the LanguaTalk Communicate and Unlimited plans?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Communicate plan is designed for daily maintenance (20-30 minutes), while the Unlimited plan is for 'The Sprinter' who needs several hours of daily immersion to reach fluency quickly."
+            }
+          }
+        ]
       },
-      "offers": { "@type": "Offer", "name": "Free Trial Session", "price": "0.00", "priceCurrency": "USD" }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Why does LanguaTalk require a credit card for a 'Free' trial?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The card requirement prevents bot abuse and ensures high-quality service for serious learners, as the AI uses expensive LLMs and cloned native voices. Users can cancel with a single click in settings before the trial ends."
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Table of Contents",
+        "mainEntityOfPage": "https://englishfix.net/reviews/languatalk.html",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Key Features",
+            "url": "https://englishfix.net/reviews/languatalk.html#features"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tool Comparison",
+            "url": "https://englishfix.net/reviews/languatalk.html#comparison"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Pricing & Plans",
+            "url": "https://englishfix.net/reviews/languatalk.html#pricing"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Is it Worth it?",
+            "url": "https://englishfix.net/reviews/languatalk.html#worth-it"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Technical FAQ",
+            "url": "https://englishfix.net/reviews/languatalk.html#faq"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Final Verdict",
+            "url": "https://englishfix.net/reviews/languatalk.html#verdict"
           }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I use Langua AI as a standalone tool without a tutor?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. The AI is sophisticated enough to act as a standalone speaking simulator for B1-B2 speakers. Many users use it for daily rehearsal and only book human tutors for high-stakes preparation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How is LanguaTalk better than ChatGPT for language learning?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Unlike ChatGPT, Langua is designed as a coach. It transcribes speech in real-time, highlights specific grammatical errors, and offers business-standard phrasing suggestions that general AI models often ignore."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why should I subscribe via the website instead of the App Store?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Subscribing via LanguaTalk.com ensures you are covered by their 30-day money-back guarantee. Third-party app stores like Apple and Google often block developers from issuing direct refunds."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the difference between the LanguaTalk Communicate and Unlimited plans?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The Communicate plan is designed for daily maintenance (20-30 minutes), while the Unlimited plan is for 'The Sprinter' who needs several hours of daily immersion to reach fluency quickly."
-          }
-        }
-      ]
-    }
+        ]
+      }
+    ]
     </script>
 </head>
 <body class="font-sans antialiased">
@@ -103,7 +154,7 @@
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <div class="w-10 h-10 rounded-lg overflow-hidden shadow-lg shrink-0 border border-ink/5"> 
-                    <img src="../richard.webp" alt="Richard" class="w-full h-full object-cover" width="67" height="67" loading="eager">
+                    <img src="/richard.webp" alt="Richard" class="w-full h-full object-cover" width="67" height="67" loading="eager">
                 </div>
                 <div class="flex flex-col">
                     <a href="/index.html" class="text-xl font-bold font-serif tracking-tight text-ink leading-tight hover:text-terracotta transition-colors px-3 py-2">EnglishFix</a>

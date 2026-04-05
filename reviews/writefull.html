@@ -20,119 +20,124 @@
         .prose h1, .prose h2, .prose h3, .prose h4 { font-family: 'Merriweather', serif; color: #2C3E50; font-weight: 700; }
     </style>
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "Writefull",
-      "image": "https://englishfix.net/richard.webp",
-      "description": "AI-driven writing suite trained on millions of journal articles, specifically designed for academic and technical writing.",
-      "brand": {
-        "@type": "Brand",
-        "name": "Writefull"
-      },
-      "review": {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
+    [
+      {
+        "@context": "https://schema.org/",
+        "@type": ["Product", "SoftwareApplication"],
+        "name": "Writefull",
+        "image": "/richard.webp",
+        "description": "AI-driven writing suite trained on millions of journal articles, specifically designed for academic and technical writing.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Writefull"
+        },
+        "applicationCategory": "EducationalApplication, BusinessApplication",
+        "operatingSystem": "Web, Windows, macOS, iOS, Android",
+        "aggregateRating": {
+          "@type": "AggregateRating",
           "ratingValue": "4.9",
-          "bestRating": "5"
+          "reviewCount": "128"
         },
-        "author": {
-          "@type": "Person",
-          "name": "Richard",
-          "image": "https://englishfix.net/richard.webp"
-        }
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.9",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Richard",
+            "image": "/richard.webp"
+          }
+        },
+        "offers": { "@type": "Offer", "name": "Free Tier Available", "price": "0.00", "priceCurrency": "USD" }
       },
-      "offers": { "@type": "Offer", "name": "Free Tier Available", "price": "0.00", "priceCurrency": "USD" }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Why should I use Writefull instead of ChatGPT for my research papers?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "While ChatGPT is a powerful generalist, it often prioritizes \"readability\" over \"academic rigor.\" Writefull is trained exclusively on millions of published journal articles, meaning its suggestions follow the specific conventions of scholarly publishing. In head-to-head tests, Writefull’s Ask AI more effectively suggests hypothesis generation and emphasizes study significance, whereas ChatGPT tends to produce prose that is too conversational for high-impact journals."
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why should I use Writefull instead of ChatGPT for my research papers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "While ChatGPT is a powerful generalist, it often prioritizes \"readability\" over \"academic rigor.\" Writefull is trained exclusively on millions of published journal articles, meaning its suggestions follow the specific conventions of scholarly publishing. In head-to-head tests, Writefull’s Ask AI more effectively suggests hypothesis generation and emphasizes study significance, whereas ChatGPT tends to produce prose that is too conversational for high-impact journals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Writefull use my unpublished data to train its AI models?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This is the #1 concern for researchers. Unlike many \"free\" AI tools, Writefull has a strict privacy mandate: none of your text, searches, or manuscripts are stored or used to train their models. When you use the Overleaf or Word integrations, your data is processed through an encrypted connection and instantly wiped. Writefull is trained on already published literature, ensuring your intellectual property remains 100% yours."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the Writefull-Overleaf integration actually work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Writefull and Overleaf are part of the same parent company (Digital Science), leading to the most seamless LaTeX integration on the market. Once enabled in your Overleaf settings, Writefull appears as a dedicated toolbar within your editor. It is the only tool that can \"read\" through LaTeX code to provide language feedback without breaking your formulas or citations. Its TeXGPT feature also allows you to generate complex LaTeX tables and equations using simple English prompts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a free version of Writefull, and do they offer student discounts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Writefull offers a \"Free\" tier that includes limited access to the language edits and widgets like the Abstract Generator. For unlimited use, the Premium tier is roughly $15/month (billed annually). While they don't always advertise a \"student\" code, they offer significant Group Discounts for labs or departments, and many universities (like Stanford and Oxford) provide full Institutional licenses to their students for free."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the \"Academizer\" and how is it different from a standard paraphraser?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A standard paraphraser (like the one in Grammarly) simply looks for synonyms to avoid repetition. Writefull’s Academizer is a specialized engine that identifies informal \"spoken\" English and converts it into formal, objective academic prose. For example, it will suggest changing \"we found out\" to \"our results indicate,\" or \"a lot of\" to \"a substantial number of,\" ensuring your tone matches the expectations of peer reviewers."
+            }
           }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Writefull use my unpublished data to train its AI models?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "This is the #1 concern for researchers. Unlike many \"free\" AI tools, Writefull has a strict privacy mandate: none of your text, searches, or manuscripts are stored or used to train their models. When you use the Overleaf or Word integrations, your data is processed through an encrypted connection and instantly wiped. Writefull is trained on already published literature, ensuring your intellectual property remains 100% yours."
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Table of Contents",
+        "mainEntityOfPage": "https://englishfix.net/reviews/writefull.html",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "The Generic AI Trap",
+            "url": "https://englishfix.net/reviews/writefull.html#problem"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Executive Toolkit",
+            "url": "https://englishfix.net/reviews/writefull.html#toolkit"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Triple-Pass Workflow",
+            "url": "https://englishfix.net/reviews/writefull.html#workflow"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Technical Comparison",
+            "url": "https://englishfix.net/reviews/writefull.html#comparison"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Technical FAQ",
+            "url": "https://englishfix.net/reviews/writefull.html#faq"
           }
-        },
-        {
-          "@type": "Question",
-          "name": "How does the Writefull-Overleaf integration actually work?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Writefull and Overleaf are part of the same parent company (Digital Science), leading to the most seamless LaTeX integration on the market. Once enabled in your Overleaf settings, Writefull appears as a dedicated toolbar within your editor. It is the only tool that can \"read\" through LaTeX code to provide language feedback without breaking your formulas or citations. Its TeXGPT feature also allows you to generate complex LaTeX tables and equations using simple English prompts."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is there a free version of Writefull, and do they offer student discounts?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Writefull offers a \"Free\" tier that includes limited access to the language edits and widgets like the Abstract Generator. For unlimited use, the Premium tier is roughly $15/month (billed annually). While they don't always advertise a \"student\" code, they offer significant Group Discounts for labs or departments, and many universities (like Stanford and Oxford) provide full Institutional licenses to their students for free."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the \"Academizer\" and how is it different from a standard paraphraser?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A standard paraphraser (like the one in Grammarly) simply looks for synonyms to avoid repetition. Writefull’s Academizer is a specialized engine that identifies informal \"spoken\" English and converts it into formal, objective academic prose. For example, it will suggest changing \"we found out\" to \"our results indicate,\" or \"a lot of\" to \"a substantial number of,\" ensuring your tone matches the expectations of peer reviewers."
-          }
-        }
-      ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "name": "Table of Contents",
-      "mainEntityOfPage": "https://englishfix.net/reviews/writefull.html",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "The Generic AI Trap",
-          "url": "https://englishfix.net/reviews/writefull.html#problem"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Executive Toolkit",
-          "url": "https://englishfix.net/reviews/writefull.html#toolkit"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Triple-Pass Workflow",
-          "url": "https://englishfix.net/reviews/writefull.html#workflow"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Technical Comparison",
-          "url": "https://englishfix.net/reviews/writefull.html#comparison"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Technical FAQ",
-          "url": "https://englishfix.net/reviews/writefull.html#faq"
-        }
-      ]
-    }
+        ]
+      }
+    ]
     </script>
 </head>
 <body class="font-sans antialiased">

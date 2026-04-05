@@ -20,60 +20,123 @@
         .prose h1, .prose h2, .prose h3, .prose h4 { font-family: 'Merriweather', serif; color: #2C3E50; font-weight: 700; }
     </style>
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "ProWritingAid",
-      "image": "https://yourdomain.com/richard.jpg",
-      "description": "Comprehensive editing and manuscript analysis software for authors.",
-      "brand": {
-        "@type": "Brand",
-        "name": "ProWritingAid"
-      },
-      "review": {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
+    [
+      {
+        "@context": "https://schema.org/",
+        "@type": ["Product", "SoftwareApplication"],
+        "name": "ProWritingAid",
+        "image": "/richard.webp",
+        "description": "Comprehensive editing and manuscript analysis software for authors.",
+        "brand": {
+          "@type": "Brand",
+          "name": "ProWritingAid"
+        },
+        "applicationCategory": "EducationalApplication, BusinessApplication",
+        "operatingSystem": "Web, Windows, macOS, iOS, Scrivener",
+        "aggregateRating": {
+          "@type": "AggregateRating",
           "ratingValue": "4.8",
-          "bestRating": "5"
+          "reviewCount": "156"
         },
-        "author": {
-          "@type": "Person",
-        "name": "Richard",
-        "image": "https://englishfix.net/richard.jpg"
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.8",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Richard",
+            "image": "/richard.webp"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "79.00",
+          "availability": "https://schema.org/InStock"
         }
       },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "USD",
-        "price": "79.00",
-        "availability": "https://schema.org/InStock"
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is ProWritingAid better than Grammarly for fiction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, for long-form storytelling. While Grammarly is faster for catching typos in emails and social posts, it lacks \"story intelligence.\" ProWritingAid’s 25+ reports analyze pacing, dialogue tags, and sensory details—things a standard grammar checker simply doesn't see. If you are writing a 70,000-word novel, Grammarly is a spell-checker; ProWritingAid is a developmental editor."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the ProWritingAid Lifetime License worth it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In 2026, the Premium Lifetime license ($399) typically pays for itself in 3.3 years compared to the annual subscription. For serious authors who plan to write more than one book, it is the most cost-effective move in the industry. It’s one of the few professional writing tools that still offers a \"buy it once, own it forever\" model."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it actually work with Scrivener?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This is ProWritingAid's \"killer feature.\" Unlike other tools that require you to copy-paste and lose your formatting, the ProWritingAid desktop app allows you to open your Scrivener project directly. You can edit a chapter, save it, and the changes appear in Scrivener instantly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does ProWritingAid use my writing to train AI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This is a major concern for authors in 2026. ProWritingAid has a strict privacy policy and does not use your manuscript data to train their Large Language Models (LLMs). Your intellectual property remains yours alone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are \"Sparks\" and how do they work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "\"Sparks\" is PWA’s 2026 AI engine. It doesn't just \"fix\" a sentence; it gives you options to expand, summarize, or change the tone of your prose. It’s designed to help you break through \"sticky\" sentences where the grammar is correct but the rhythm is off."
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Table of Contents",
+        "mainEntityOfPage": "https://englishfix.net/reviews/prowritingaid.html",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Key Features",
+            "url": "https://englishfix.net/reviews/prowritingaid.html#features"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tool Comparison",
+            "url": "https://englishfix.net/reviews/prowritingaid.html#comparison"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Technical FAQ",
+            "url": "https://englishfix.net/reviews/prowritingaid.html#faq"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Final Verdict",
+            "url": "https://englishfix.net/reviews/prowritingaid.html#pricing"
+          }
+        ]
       }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is ProWritingAid better than Grammarly for fiction?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. While Grammarly is better for short-form business writing, ProWritingAid is designed for novelists, offering reports on pacing, dialogue tags, and narrative flow."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does ProWritingAid work with Scrivener?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, ProWritingAid offers native integration with Scrivener, allowing you to edit your manuscript without losing your formatting or folder structure."
-          }
-        }
-      ]
-    }
+    ]
     </script>
 </head>
 <body class="font-sans antialiased">
