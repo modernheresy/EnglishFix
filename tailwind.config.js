@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         'paper': '#F9F7F2',
         'ink': '#2C3E50',
-        'terracotta': '#E67E22',
+        'terracotta': '#C05D0D',
       },
       fontFamily: {
         serif: ['Merriweather', 'serif'],
