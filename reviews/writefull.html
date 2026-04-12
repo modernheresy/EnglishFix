@@ -57,59 +57,83 @@
         "offers": { "@type": "Offer", "name": "Premium Plan", "price": "150.00", "priceCurrency": "USD", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "150.00", "priceCurrency": "USD", "unitText": "YEAR" } }
       },
       {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Why should I use Writefull instead of ChatGPT for my research papers?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "While ChatGPT is a powerful generalist, it often prioritizes \"readability\" over \"academic rigor.\" Writefull is trained exclusively on millions of published journal articles, meaning its suggestions follow the specific conventions of scholarly publishing. In head-to-head tests, Writefull’s Ask AI more effectively suggests hypothesis generation and emphasizes study significance, whereas ChatGPT tends to produce prose that is too conversational for high-impact journals."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does Writefull use my unpublished data to train its AI models?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "This is the #1 concern for researchers. Unlike many \"free\" AI tools, Writefull has a strict privacy mandate: none of your text, searches, or manuscripts are stored or used to train their models. When you use the Overleaf or Word integrations, your data is processed through an encrypted connection and instantly wiped. Writefull is trained on already published literature, ensuring your intellectual property remains 100% yours."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How does the Writefull-Overleaf integration actually work?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Writefull and Overleaf are part of the same parent company (Digital Science), leading to the most seamless LaTeX integration on the market. Once enabled in your Overleaf settings, Writefull appears as a dedicated toolbar within your editor. It is the only tool that can \"read\" through LaTeX code to provide language feedback without breaking your formulas or citations. Its TeXGPT feature also allows you to generate complex LaTeX tables and equations using simple English prompts."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is there a free version of Writefull, and do they offer student discounts?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Writefull offers a free tier with a daily usage quota covering most core features. For unlimited use, the Premium plan is $21/month (or $150/year billed annually). Many universities, including Stanford and Oxford, provide full institutional licences to their students at no cost."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the \"Academizer\" and how is it different from a standard paraphraser?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "A standard paraphraser (like the one in Grammarly) simply looks for synonyms to avoid repetition. Writefull’s Academizer is a specialized engine that identifies informal \"spoken\" English and converts it into formal, objective academic prose. For example, it will suggest changing \"we found out\" to \"our results indicate,\" or \"a lot of\" to \"a substantial number of,\" ensuring your tone matches the expectations of peer reviewers."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Writefull vs Paperpal: which is better for academic writing?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "For STEM researchers and LaTeX/Overleaf users, Writefull is the better choice — it has native Overleaf integration and costs around $150/year vs Paperpal's ~$300/year. Paperpal wins on feature breadth, offering plagiarism detection, citation generation, and 50+ language translation tools that Writefull lacks. Choose Writefull for LaTeX workflows and budget; choose Paperpal if you need an all-in-one academic research suite."
-            }
-          }
-        ]
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why should I use Writefull instead of ChatGPT for my research papers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "While ChatGPT is a powerful generalist, it often prioritizes readability over academic rigor. Writefull is trained exclusively on millions of published journal articles, meaning its suggestions follow the specific conventions of scholarly publishing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Writefull use my unpublished data to train its AI models?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Writefull has a strict privacy mandate: none of your text, searches, or manuscripts are stored or used to train their models. Your data is processed through an encrypted connection and instantly wiped."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the Writefull-Overleaf integration actually work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Writefull and Overleaf share the same parent company (Digital Science). Go to Overleaf Account Settings, scroll to AI Features, and click Enable AI features. The W icon appears in your editor toolbar immediately. TeXGPT generates LaTeX code from plain English descriptions directly in your document."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a free version of Writefull, and do they offer student discounts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Writefull offers a free tier with a daily usage quota. Premium costs $21/month or $150/year. Many universities including Stanford and Oxford provide free institutional licences — check your university portal before paying."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the Academizer and how is it different from a standard paraphraser?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A standard paraphraser swaps synonyms. The Academizer identifies informal spoken English and converts it into formal academic prose — adjusting vocabulary, sentence structure, and tone simultaneously. For example: we found out becomes our results indicate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Writefull vs Paperpal: which is better for academic writing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For STEM researchers and LaTeX/Overleaf users, Writefull is the better choice with native Overleaf integration and $150/year pricing vs Paperpal's ~$300/year. Paperpal wins on feature breadth: plagiarism detection, citation generation, and 50+ language translation. Choose Writefull for LaTeX; choose Paperpal for an all-in-one research suite."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will Writefull's edits trigger an AI detector when I submit my paper?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For core editing features — grammar corrections, Academizer, Paraphraser — almost certainly no. These refine text you wrote rather than replacing it. Generative features like Abstract Generator and TeXGPT do produce AI text and should be reviewed before submission. Check your target journal's AI disclosure policy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get started with Writefull — Word or Overleaf?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For Word: install the Writefull add-in from Microsoft AppSource via Insert > Add-ins > search Writefull. For Overleaf: go to Account Settings > AI Features > Enable AI features — no extension needed. Check institutional access first — 1,500+ universities provide Writefull free including Revise and Cite that individual plans exclude."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Writefull free, or do you need Premium?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Free tier includes a daily usage quota for language editing, Academizer, Paraphraser, and core widgets. Premium at $150/year removes limits and unlocks unlimited TeXGPT. University researchers should check institutional access before purchasing."
+        }
       }
+    ]
+  }
     ]
     </script>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "99aae5d97b1d4a72892a61d1de556eb0"}'></script><!-- End Cloudflare Web Analytics -->
@@ -172,15 +196,18 @@
         <div class="max-w-prose mx-auto mb-12 py-6 px-8 bg-white/50 rounded-[32px] border border-ink/5 soft-shadow font-sans text-sm">
             <p class="font-bold uppercase tracking-widest text-[10px] text-ink/85 mb-4 text-center md:text-left">In this Review</p>
             <ul class="flex flex-wrap justify-center md:justify-start gap-x-8 gap-y-2 text-terracotta font-bold">
-                <li><a href="#problem" class="hover:underline hover:text-ink transition-all">Why Grammarly Falls Short</a></li>
-                <li><a href="#toolkit" class="hover:underline hover:text-ink transition-all">Key Features</a></li>
-                <li><a href="#workflow" class="hover:underline hover:text-ink transition-all">How to Use It</a></li>
-                <li><a href="#institutions" class="hover:underline hover:text-ink transition-all">Universities</a></li>
-                <li><a href="#vs-paperpal" class="hover:underline hover:text-ink transition-all">Writefull vs Paperpal</a></li>
-                <li><a href="#privacy" class="hover:underline hover:text-ink transition-all">Data Privacy</a></li>
-                <li><a href="#comparison" class="hover:underline hover:text-ink transition-all">Full Comparison</a></li>
-                <li><a href="#faq" class="hover:underline hover:text-ink transition-all">FAQ</a></li>
-                <li><a href="#verdict" class="hover:underline hover:text-ink transition-all">Verdict</a></li>
+              <li><a href="#problem" class="hover:underline hover:text-ink transition-all">Why Grammarly Falls Short</a></li>
+              <li><a href="#what-is-writefull" class="hover:underline hover:text-ink transition-all">What Is Writefull</a></li>
+              <li><a href="#toolkit" class="hover:underline hover:text-ink transition-all">Key Features</a></li>
+              <li><a href="#workflow" class="hover:underline hover:text-ink transition-all">How to Use It</a></li>
+              <li><a href="#setup" class="hover:underline hover:text-ink transition-all">Setup Guide</a></li>
+              <li><a href="#esl" class="hover:underline hover:text-ink transition-all">ESL Researchers</a></li>
+              <li><a href="#institutions" class="hover:underline hover:text-ink transition-all">Universities</a></li>
+              <li><a href="#vs-paperpal" class="hover:underline hover:text-ink transition-all">vs Paperpal</a></li>
+              <li><a href="#privacy" class="hover:underline hover:text-ink transition-all">Data Privacy</a></li>
+              <li><a href="#comparison" class="hover:underline hover:text-ink transition-all">Comparison</a></li>
+              <li><a href="#faq" class="hover:underline hover:text-ink transition-all">FAQ</a></li>
+              <li><a href="#verdict" class="hover:underline hover:text-ink transition-all">Verdict</a></li>
             </ul>
         </div>
 
@@ -193,47 +220,534 @@
             <p>This review covers everything: how Writefull compares to Grammarly and Paperpal, whether the Overleaf and LaTeX integration actually works, what the free tier gets you, what Microsoft Word users get, and where the tool falls short.</p>
 
             <h2 id="what-is-writefull">What Is Writefull, and How Is It Different from Grammarly?</h2>
-            <p>Writefull is a specialized AI-driven writing suite that differentiates itself through its training data. While ChatGPT or Grammarly scrape the entire internet—including Reddit threads and recipe blogs—Writefull is trained on millions of published journal articles and technical papers.</p>
-            <p>This narrow, high-quality focus makes it arguably the <strong>best academic grammar checker</strong> available today. It doesn't just check your spelling; it understands the structural logic of a formal manuscript. It recognizes the specific "disciplinary tone" required in fields ranging from Sociology to Theoretical Physics.</p>
+            <p>Writefull is an AI-powered academic writing suite built by researchers, for researchers. Founded by a team in linguistics and AI across the Netherlands, Spain, and the UK, it has carved out a specific niche that general-purpose tools cannot occupy: language assistance that understands how academic writing actually works. While Grammarly and ChatGPT are trained on the open internet, Writefull's models were trained on millions of peer-reviewed journal articles — producing suggestions calibrated to scholarly conventions rather than the norms of business communication.</p>
+
+            <p>The product is not a single tool — it is an ecosystem of five connected products. <strong>Writefull for Word</strong> is a Microsoft Word add-in bringing the full feature suite into the world's most common document editor. <strong>Writefull for Overleaf</strong> integrates natively into the LaTeX editor used by the majority of STEM researchers. <strong>Writefull Revise</strong> is a document-level pre-submission checker available on institutional plans. <strong>Writefull Cite</strong> identifies where your manuscript lacks supporting references. <strong>Writefull X</strong> provides browser-based access to the core widgets without installing anything. Together they cover the entire research writing workflow from first draft to submission.</p>
+
+            <p>This focused training makes it the <strong>best academic grammar checker</strong> for researchers writing for publication. It doesn't just correct spelling — it understands the structural logic of a formal manuscript, recognises passive constructions appropriate in methods sections, knows that "heteroscedasticity" is not a typo, and understands how a sociology paper should read differently from a physics paper. As of 2026, it is trusted not just by 1,500+ institutions but by academic publishers including Cambridge University Press, Springer Nature, and the Royal Society of Chemistry.</p>
 
             <h2 id="toolkit">Writefull's Key Features: What You Actually Get</h2>
-            <div class="not-prose grid grid-cols-1 md:grid-cols-2 gap-6 my-12 font-sans">
-                <!-- Feature 1 -->
-                <div class="p-8 bg-terracotta/5 rounded-[32px] border border-terracotta/10">
-                    <h4 class="text-ink font-bold mb-3">The "Rewrite" Suite</h4>
-                    <p class="text-sm text-ink/85 leading-relaxed">The <strong>Academizer</strong> takes informal or "clunky" sentences and instantly re-phrases them for top-tier journals. The Paraphraser offers three levels of intervention, from minimal flow changes to full structural re-phrasing.</p>
-                </div>
-                <!-- Feature 2 -->
-                <div class="p-8 bg-ink/[0.02] rounded-[32px] border border-ink/5">
-                    <h4 class="text-ink font-bold mb-3">Abstract Generators</h4>
-                    <p class="text-sm text-ink/85 leading-relaxed">Analyzing your entire paper to produce a concise summary that follows the standard conventions of your field. The Title Generator ensures your work is discoverable and high-impact.</p>
-                </div>
-                <!-- Feature 3 -->
-                <div class="p-8 bg-ink/[0.02] rounded-[32px] border border-ink/5">
-                    <h4 class="text-ink font-bold mb-3">TeXGPT (LaTeX/Overleaf)</h4>
-                    <p class="text-sm text-ink/85 leading-relaxed">A developer's secret weapon. Generate complex LaTeX code for tables, formulas, and equations directly into your Overleaf document by simply describing what you need.</p>
-                </div>
-                <!-- Feature 4 -->
-                <div class="p-8 bg-terracotta/5 rounded-[32px] border border-terracotta/10">
-                    <h4 class="text-ink font-bold mb-3">Language Search</h4>
-                    <p class="text-sm text-ink/85 leading-relaxed">Search Writefull's database to see how frequently a phrase appears in published literature. Useful for confirming that your chosen terminology matches what journals in your field actually use.</p>
-                </div>
+            <div class="not-prose grid grid-cols-1 
+              md:grid-cols-2 gap-6 my-12 font-sans">
+              <div class="p-8 bg-terracotta/5 
+                rounded-[32px] border 
+                border-terracotta/10">
+                <h4 class="text-ink font-bold mb-3">
+                The Academizer</h4>
+                <p class="text-sm text-ink/85 
+                leading-relaxed">The standout 
+                feature no mainstream tool offers. 
+                The Academizer converts informal 
+                draft-register sentences into formal 
+                academic prose in a single step — 
+                adjusting sentence structure, voice, 
+                and vocabulary simultaneously. "We 
+                found out that the drug worked 
+                better" becomes "Our results indicate 
+                that the intervention demonstrated 
+                superior efficacy." Particularly 
+                valuable for researchers who draft 
+                quickly in casual language and need 
+                to formalise efficiently, or for ESL 
+                writers who think in their native 
+                language and write in English.</p>
+              </div>
+              <div class="p-8 bg-ink/[0.02] 
+                rounded-[32px] border border-ink/5">
+                <h4 class="text-ink font-bold mb-3">
+                Paraphraser</h4>
+                <p class="text-sm text-ink/85 
+                leading-relaxed">Three levels of 
+                intervention: minimal (light flow 
+                adjustments), moderate (structural 
+                rephrasing), and full (complete 
+                reconstruction). Unlike QuillBot 
+                and generic paraphrasing tools, 
+                Writefull's Paraphraser maintains 
+                academic register throughout — 
+                every output remains 
+                publication-appropriate. Use it to 
+                avoid self-plagiarism across 
+                sections, vary repeated sentence 
+                structures, or rework passages that 
+                reviewers flagged as unclear without 
+                changing the underlying 
+                argument.</p>
+              </div>
+              <div class="p-8 bg-ink/[0.02] 
+                rounded-[32px] border border-ink/5">
+                <h4 class="text-ink font-bold mb-3">
+                TeXGPT (LaTeX/Overleaf)</h4>
+                <p class="text-sm text-ink/85 
+                leading-relaxed">The feature that 
+                makes Writefull essential for STEM 
+                researchers. Describe the table 
+                structure you need in plain English 
+                and TeXGPT writes the code. Describe 
+                an equation and it generates the 
+                LaTeX syntax. Upload an image of an 
+                existing table or formula and receive 
+                the corresponding code instantly. 
+                Beyond generation, Error Assist 
+                helps debug LaTeX compilation errors. 
+                For researchers spending significant 
+                time wrestling with LaTeX syntax 
+                rather than writing, this alone 
+                justifies the subscription 
+                cost.</p>
+              </div>
+              <div class="p-8 bg-terracotta/5 
+                rounded-[32px] border 
+                border-terracotta/10">
+                <h4 class="text-ink font-bold mb-3">
+                Language Search</h4>
+                <p class="text-sm text-ink/85 
+                leading-relaxed">Search any phrase 
+                against Writefull's corpus of 
+                published journal articles and see 
+                how frequently it appears in the 
+                literature — and in which 
+                disciplines. Debating between 
+                "fundamental correlation" and "core 
+                relation"? Language Search tells you 
+                which is more common in papers like 
+                yours. This moves terminology 
+                decisions from intuition to evidence, 
+                which matters when writing for 
+                journals with strict linguistic 
+                standards.</p>
+              </div>
+              <div class="p-8 bg-ink/[0.02] 
+                rounded-[32px] border border-ink/5">
+                <h4 class="text-ink font-bold mb-3">
+                Abstract and Title Generator</h4>
+                <p class="text-sm text-ink/85 
+                leading-relaxed">Feed Writefull your 
+                full paper and it generates an 
+                abstract following the structural 
+                conventions of your field — 
+                background, objective, methods, 
+                results, conclusion. Feed it your 
+                abstract and it generates title 
+                options. Both draw on patterns from 
+                millions of published papers, 
+                producing outputs that follow 
+                established conventions rather than 
+                the generic summary style ChatGPT 
+                produces. The Title Generator 
+                particularly improves discoverability 
+                in citation databases, where keyword 
+                placement in titles affects whether 
+                your work gets found.</p>
+              </div>
+              <div class="p-8 bg-terracotta/5 
+                rounded-[32px] border 
+                border-terracotta/10">
+                <h4 class="text-ink font-bold mb-3">
+                Sentence Palette</h4>
+                <p class="text-sm text-ink/85 
+                leading-relaxed">A feature with no 
+                equivalent in any competing tool. 
+                The Sentence Palette provides a 
+                curated library of phrases drawn 
+                from published literature, organised 
+                by section type — Abstract, 
+                Introduction, Methods, Results, 
+                Discussion, Conclusion. If you are 
+                staring at a blank Methods section 
+                unsure how researchers in your field 
+                typically frame their approach, the 
+                Palette shows you exactly how it is 
+                done across thousands of real papers. 
+                Every phrase has already passed peer 
+                review.</p>
+              </div>
+              <div class="p-8 bg-ink/[0.02] 
+                rounded-[32px] border border-ink/5">
+                <h4 class="text-ink font-bold mb-3">
+                Change Style and Synonyms in 
+                Context</h4>
+                <p class="text-sm text-ink/85 
+                leading-relaxed">Change Style shifts 
+                a selected passage between four 
+                modes: Scientific (more formal, more 
+                precise), Concise (removes 
+                redundancy), Punchy (shorter 
+                sentences, stronger verbs), and 
+                Standard. Synonyms in Context 
+                suggests replacements that 
+                specifically fit the surrounding 
+                sentence and are appropriate for 
+                academic use — preventing the 
+                register mismatches that standard 
+                thesaurus tools introduce. Both are 
+                available in Word and Overleaf 
+                integrations.</p>
+              </div>
+              <div class="p-8 bg-terracotta/5 
+                rounded-[32px] border 
+                border-terracotta/10">
+                <h4 class="text-ink font-bold mb-3">
+                Writefull Cite</h4>
+                <p class="text-sm text-ink/85 
+                leading-relaxed">Available on 
+                institutional plans, Writefull Cite 
+                analyses your manuscript and flags 
+                claims that lack supporting 
+                citations. It does not fabricate 
+                references — it identifies the gaps 
+                in your existing citation coverage 
+                and points to specific uncited 
+                sentences. For PhD candidates 
+                preparing a dissertation or 
+                researchers submitting to 
+                citation-sensitive journals, this 
+                functions as an automated version of 
+                the citation audit that supervisors 
+                and copyeditors typically perform 
+                manually.</p>
+              </div>
             </div>
 
             <h2 id="workflow">How to Use Writefull: A Three-Step Editing Workflow</h2>
             <p>Writefull works best when you treat it as three separate passes over your document, each targeting a different layer of quality. Here's how to structure that process.</p>
             
             <h3>Step 1: Run Writefull Revise for a language quality score</h3>
-            <p>Upload your draft and Writefull Revise gives it a Language Quality Score alongside specific flags for repetitive structures, inconsistent tense, and phrasing that doesn't match published norms in your field. Fix these systemic issues before touching individual word choices.</p>
+            <p>Writefull Revise — the document-level pre-submission checker — is available to researchers at institutions with a Writefull institutional licence. If your university is among the 1,500+ institutions that provide access, this is where to start: upload your manuscript as a .docx or .tex file and Writefull returns a revised version with Track Changes enabled alongside a Language Quality Score. Every suggested change is visible and reversible. For individual Premium subscribers without institutional access, the equivalent first pass is to run the full "Check Document" function in Writefull for Word, which performs the same systemic review across your entire manuscript. Either way, fix the structural flags first — repetitive sentence structures, inconsistent tense across sections, and phrasing that deviates from published norms — before moving to individual word choices. These are the issues that accumulate silently across a long document and that sentence-by-sentence editing rarely surfaces.</p>
 
             <h3>Step 2: Use the Academizer to fix informal language</h3>
-            <p>Identify sections that feel too "conversational." Use the Academizer to swap weak verbs (like "got" or "showed") for high-impact academic alternatives ("obtained" or "demonstrated").</p>
+            <p>After the structural pass, move section by section looking for draft-register language — passages you wrote quickly to capture an idea rather than to publish. These typically appear in the Introduction and Discussion, where informal phrasing creeps in most easily. Select each problematic passage and run it through the Academizer. The target is not just verb choice — though swapping "got" for "obtained" and "showed" for "demonstrated" is a start — but the overall register of the sentence. Accept suggestions selectively: Writefull's output is a strong starting point, not a final draft. Discipline-specific nuances occasionally require you to override its defaults, particularly in Discussion sections where your own analytical voice should come through.</p>
 
             <h3>Step 3: Verify your terminology with Language Search</h3>
-            <p>Use Language Search for critical claims. Swapping "the data suggests a core relation" for "the data indicates a fundamental correlation" ensures you aren't just "correct"—you are conventional for your target audience.</p>
+            <p>Before finalising, use Language Search to verify the key terminology choices in your manuscript — particularly in the Abstract, Introduction, and Conclusion, where non-standard phrasing is most visible to reviewers. Type your chosen phrase and check its frequency in the published literature. If "the data suggests a core relation" returns low frequency while "the data indicates a fundamental correlation" returns high frequency across papers in your discipline, you have evidence rather than intuition for the stronger choice. This step is especially important for non-native English speakers, where the instinct for what "sounds right" in academic English may differ from what the literature actually uses.</p>
+
+            <h2 id="setup">How to Get Started with Writefull: 
+            A Setup Guide for Researchers</h2>
+            <p>Most "how to use Writefull" guides skip the decision that 
+            actually matters first: which product should you install? 
+            Writefull is not a single tool — it is five connected 
+            products, and the right entry point depends entirely on where 
+            you write. This guide covers setup for all three routes: 
+            Microsoft Word, Overleaf, and the no-install browser option. 
+            Choose your track and follow the steps for your 
+            environment.</p>
+
+            <h3>Step 1: Check whether your institution already provides 
+            access</h3>
+            <p>Before creating a paid account, check whether your 
+            university provides a free institutional licence. Over 1,500 
+            institutions worldwide — including Stanford, Oxford, and 
+            Monash — offer Writefull to all enrolled students and 
+            researchers at no cost. Institutional access also unlocks 
+            Writefull Revise and Writefull Cite, which are not available 
+            on individual plans. Visit your university library portal or 
+            software hub and search for Writefull, or email your library 
+            directly. Many researchers pay for access they already have 
+            through their institution.</p>
+            <p>If your institution does not have a licence, create a 
+            free individual account at writefull.com. The free tier 
+            provides a daily usage quota covering most core features — 
+            enough to test the tool thoroughly before deciding whether 
+            to upgrade to Premium ($21/month or $150/year billed 
+            annually).</p>
+
+            <h3>Track A: Setting up Writefull for Microsoft Word</h3>
+            <p>The Word integration is the right choice for researchers 
+            in the social sciences, humanities, medicine, and any field 
+            where the primary writing environment is Word rather than 
+            LaTeX. It requires Word 2016 or newer on Windows or Mac, or 
+            Word Online.</p>
+
+            <div class="not-prose my-8 font-sans">
+                <ol class="space-y-5 text-sm text-ink/85 leading-relaxed">
+                    <li class="flex gap-4 items-start">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full 
+                            bg-terracotta/10 border border-terracotta/20 
+                            text-terracotta font-bold flex items-center 
+                            justify-center text-xs">1</span>
+                        <div><strong class="text-ink">Open Microsoft 
+                        Word</strong> and navigate to the 
+                        <strong>Insert</strong> tab in the ribbon. 
+                        Click <strong>Add-ins</strong>, then 
+                        <strong>Get Add-ins</strong> (or More Add-ins). 
+                        If you are on an institutional computer that 
+                        restricts AppSource, go to Insert → Add-ins → 
+                        My Add-ins instead and look for Writefull 
+                        there.</div>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full 
+                            bg-terracotta/10 border border-terracotta/20 
+                            text-terracotta font-bold flex items-center 
+                            justify-center text-xs">2</span>
+                        <div><strong class="text-ink">Search for 
+                        "Writefull"</strong> in the AppSource search 
+                        bar. Click the Writefull result and then 
+                        <strong>Add</strong>. Word will install the 
+                        add-in automatically. On first launch it may 
+                        show a Microsoft Defender SmartScreen warning 
+                        — click <em>More info</em> then 
+                        <em>Run anyway</em>. This is a one-time 
+                        prompt.</div>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full 
+                            bg-terracotta/10 border border-terracotta/20 
+                            text-terracotta font-bold flex items-center 
+                            justify-center text-xs">3</span>
+                        <div><strong class="text-ink">Sign in or create 
+                        your account.</strong> The Writefull panel opens 
+                        in the Word sidebar. Click <em>Sign in</em>, 
+                        enter your Writefull account credentials, and 
+                        click Save. If you are accessing through an 
+                        institutional licence, use your institutional 
+                        email address — this links your account to your 
+                        institution's plan automatically.</div>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full 
+                            bg-terracotta/10 border border-terracotta/20 
+                            text-terracotta font-bold flex items-center 
+                            justify-center text-xs">4</span>
+                        <div><strong class="text-ink">Run your first 
+                        document check.</strong> Open the manuscript 
+                        you want to review. In the Writefull sidebar, 
+                        click <strong>Check document</strong>. Writefull 
+                        will scan your entire document and surface 
+                        language suggestions inline. Yellow underlines 
+                        indicate suggestions — click each one to see 
+                        the proposed change and accept or dismiss 
+                        individually.</div>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full 
+                            bg-terracotta/10 border border-terracotta/20 
+                            text-terracotta font-bold flex items-center 
+                            justify-center text-xs">5</span>
+                        <div><strong class="text-ink">Access the AI 
+                        widgets.</strong> Highlight any passage and 
+                        right-click (or use the Writefull sidebar) to 
+                        access the Academizer, Paraphraser, Change 
+                        Style, and Synonyms in Context. The Ask AI 
+                        feature appears in the sidebar as a chat 
+                        interface — use it to ask discipline-specific 
+                        writing questions without leaving 
+                        Word.</div>
+                    </li>
+                </ol>
+            </div>
+
+            <h3>Track B: Setting up Writefull for Overleaf 
+            (LaTeX users)</h3>
+            <p>The Overleaf integration requires no browser 
+            extension and no separate installation — it is built 
+            directly into Overleaf and enabled via your account 
+            settings. This is the fastest setup of any Writefull 
+            product, and the most powerful for STEM researchers 
+            writing in LaTeX.</p>
+
+            <div class="not-prose my-8 font-sans">
+                <ol class="space-y-5 text-sm text-ink/85 leading-relaxed">
+                    <li class="flex gap-4 items-start">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full 
+                            bg-terracotta/10 border border-terracotta/20 
+                            text-terracotta font-bold flex items-center 
+                            justify-center text-xs">1</span>
+                        <div><strong class="text-ink">Log in to 
+                        Overleaf</strong> and navigate to 
+                        <strong>Account Settings</strong>. Scroll down 
+                        to the <strong>AI Features</strong> section. 
+                        You will see Writefull listed here with a 
+                        toggle.</div>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full 
+                            bg-terracotta/10 border border-terracotta/20 
+                            text-terracotta font-bold flex items-center 
+                            justify-center text-xs">2</span>
+                        <div><strong class="text-ink">Click "Enable AI 
+                        features."</strong> This activates both 
+                        Writefull and Error Assist simultaneously. 
+                        Overleaf will create a Writefull account using 
+                        your Overleaf credentials automatically — in 
+                        most cases this happens without any prompt. If 
+                        asked to sign in, select <em>One-click sign-in 
+                        with Overleaf</em>.</div>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full 
+                            bg-terracotta/10 border border-terracotta/20 
+                            text-terracotta font-bold flex items-center 
+                            justify-center text-xs">3</span>
+                        <div><strong class="text-ink">Open any 
+                        project.</strong> You will now see the 
+                        Writefull <strong>W icon</strong> in your 
+                        Overleaf editor toolbar. Click it to open the 
+                        Writefull toolbar. In the toolbar settings, 
+                        toggle on <em>Display Suggestions</em> — this 
+                        enables yellow-underline inline suggestions 
+                        throughout your LaTeX source.</div>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full 
+                            bg-terracotta/10 border border-terracotta/20 
+                            text-terracotta font-bold flex items-center 
+                            justify-center text-xs">4</span>
+                        <div><strong class="text-ink">Use TeXGPT for 
+                        code generation.</strong> Click the robot icon 
+                        in the Writefull toolbar to open TeXGPT. Type 
+                        a plain English description of what you need — 
+                        "a three-column table comparing sample sizes 
+                        across three groups" — and TeXGPT generates 
+                        the LaTeX code. You can also upload an image 
+                        of an existing table or formula to receive the 
+                        corresponding LaTeX syntax. The generated 
+                        code inserts directly at your cursor 
+                        position.</div>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full 
+                            bg-terracotta/10 border border-terracotta/20 
+                            text-terracotta font-bold flex items-center 
+                            justify-center text-xs">5</span>
+                        <div><strong class="text-ink">Use context 
+                        options for any selected text.</strong> 
+                        Highlight any passage in your source and 
+                        the Writefull context menu appears — giving 
+                        you one-click access to Paraphrase, 
+                        Academize, Summarize, Explain, and Synonyms 
+                        in Context without leaving the editor. 
+                        Writefull reads through your LaTeX markup 
+                        and only surfaces suggestions on your actual 
+                        prose, leaving formulas, commands, and 
+                        citations untouched.</div>
+                    </li>
+                </ol>
+            </div>
+
+            <h3>Track C: Writefull X — no installation required</h3>
+            <p>If you work across multiple devices, collaborate 
+            on documents in the cloud, or simply want to test 
+            Writefull's core features before committing to an 
+            installation, Writefull X is the browser-based 
+            option. It requires no add-in and no extension — 
+            navigate to x.writefull.com, sign in with your 
+            Writefull account, and access the Academizer, 
+            Paraphraser, Title Generator, Abstract Generator, 
+            and Language Search directly in your browser. Paste 
+            in your text, run the tool, and copy the output 
+            back to your document.</p>
+            <p>Writefull X is the right starting point for 
+            anyone who wants to test the Academizer or Language 
+            Search before installing anything. It is also 
+            useful for quick spot-checks on individual paragraphs 
+            outside of a full editing session. The free tier 
+            daily quota applies here as it does everywhere — 
+            once you hit it, you wait until the following day 
+            or upgrade to Premium for unlimited access.</p>
+
+            <h3>Understanding the free tier limits and when 
+            to upgrade</h3>
+            <p>Writefull's free tier is genuinely usable, which 
+            separates it from tools that gate almost all 
+            functionality behind a paywall. You get a daily 
+            usage quota covering language editing, the 
+            Academizer, and the core widgets across all 
+            platforms. The quota resets every 24 hours. For 
+            occasional users — a PhD student editing one section 
+            per session — the free tier is often sufficient.</p>
+            <p>Upgrade to Premium ($21/month or $150/year) when 
+            you are hitting the daily limit regularly, when you 
+            need unlimited TeXGPT access in Overleaf, or when 
+            you are in a final submission push and cannot afford 
+            to stop mid-document. The annual plan at $150/year 
+            is the better value by a significant margin — it 
+            works out to $12.50/month. If you are affiliated 
+            with a university, check institutional access first: 
+            many researchers upgrade to Premium before realising 
+            their institution already provides full 
+            access.</p>
+
+            <h2 id="esl">Writefull for Non-Native 
+            English Speakers</h2>
+            <p>A significant share of the global 
+            research community writes in English as 
+            an additional language. For these 
+            researchers — native speakers of 
+            Mandarin, Arabic, Portuguese, Spanish, 
+            or dozens of other languages — the 
+            challenge is not grammar in the basic 
+            sense. It is register. Knowing that "we 
+            observed a rise" is acceptable but "we 
+            saw a rise" reads as informal. Knowing 
+            that passive constructions in Methods 
+            sections are a convention, not an error. 
+            These are the accumulated micro-decisions 
+            about phrasing that native English 
+            speakers make unconsciously and that 
+            non-native speakers must make 
+            deliberately.</p>
+            <p>Writefull was built with this user in 
+            mind. The Academizer and language editing 
+            engine are trained on the phrasing 
+            patterns that appear in published work — 
+            which means they function as a reference 
+            for what academic English looks like at 
+            the point of publication, not what 
+            general grammar rules suggest. For an 
+            ESL researcher, this is the difference 
+            between a tool that corrects mistakes and 
+            one that teaches the conventions of their 
+            field.</p>
+            <p>The Language Search feature is 
+            particularly valuable here: rather than 
+            guessing whether a phrase is conventional, 
+            a non-native speaker can verify it against 
+            the corpus directly. Writefull for Overleaf 
+            also supports GPT Language Edits for texts 
+            written in languages other than English — 
+            allowing researchers to draft in their 
+            native language and receive editing support 
+            before translating, a workflow no competing 
+            tool currently supports at this level of 
+            integration.</p>
 
             <h2 id="institutions">Writefull at Universities: Stanford, Oxford, and 1,500+ Institutions</h2>
-            <p>It is no coincidence that Writefull is used by over 1,500 institutions, including <strong>Stanford, Oxford, and Tokyo University</strong>. For these organizations, it is a productivity infrastructure. The "Writefull Cite" feature identifies where a claim lacks supporting references, providing a critical safeguard against accidental plagiarism.</p>
+            <p>Writefull's institutional reach is 
+            unusual for a tool at this price point. 
+            Over 1,500 universities and research 
+            institutions use it — including 
+            <strong>Stanford, Oxford, Monash 
+            University, and Tokyo University</strong> 
+            — providing free access to all enrolled 
+            students and researchers. If you are 
+            affiliated with a university, check your 
+            institution's software portal before 
+            purchasing a personal Premium plan. Many 
+            researchers are paying for access they 
+            already have.</p>
+            <p>The institutional credibility extends 
+            beyond universities. Writefull is used by 
+            academic publishers including 
+            <strong>Cambridge University Press, 
+            Springer Nature, and the Royal Society of 
+            Chemistry</strong>, which use Writefull's 
+            language API to check submitted manuscripts 
+            before peer review. This is a meaningful 
+            signal: publishers are using the same 
+            engine to assess your writing that you can 
+            use to improve it before submission. 
+            Writefull Cite — available on institutional 
+            plans — analyses your manuscript for 
+            uncited claims, flagging the specific 
+            sentences where a supporting reference is 
+            missing. For PhD candidates and researchers 
+            submitting to citation-sensitive journals, 
+            this functions as an automated pre-submission 
+            audit that would otherwise require a 
+            supervisor or copyeditor to perform 
+            manually.</p>
+
             <h2 id="vs-paperpal">Writefull vs Paperpal: Which Is Better for Academic Writing?</h2>
             <p>Paperpal is Writefull's closest competitor — both are trained on published journal articles, both target researchers and PhD students, and both position themselves as alternatives to Grammarly for academic writing. If you are evaluating the two, the decision comes down to three things: LaTeX workflow, pricing, and how much you need beyond language editing.</p>
 
@@ -249,14 +763,48 @@
             <p>For <strong>STEM researchers, PhD candidates, and anyone working in Overleaf</strong>, Writefull is the better tool and the lower-cost option. For <strong>social science researchers, ESL writers, or anyone who needs plagiarism detection and citation tools in one place</strong>, Paperpal justifies its higher price. We have a separate full review of <a href="/reviews/paperpal.html" class="text-terracotta hover:underline font-bold">Paperpal</a> if you want the complete breakdown before deciding.</p>
 
             <h2 id="privacy">Does Writefull Store Your Research Data?</h2>
-            <p>For researchers and executives, privacy is a dealbreaker. Many generic AI tools "learn" from your data, risking accidental leaks of unpublished research. Writefull explicitly addresses this: <strong>none of your texts or searches are stored or used for training their models.</strong></p>
+            <p>For researchers handling unpublished 
+            findings, privacy is non-negotiable. Many 
+            AI tools — including free tiers of popular 
+            grammar checkers — use submitted text to 
+            improve their models. Writefull operates 
+            under an explicit zero-retention mandate: 
+            <strong>none of your texts or searches are 
+            stored or used to train their models.</strong> 
+            Your text is processed through an encrypted 
+            connection and immediately discarded. 
+            Writefull never takes ownership of your 
+            writing and never sells your data to third 
+            parties. For features that use third-party 
+            APIs, Writefull informs you and requires 
+            your consent before any text leaves their 
+            system.</p>
+            <p><strong>On AI detection:</strong> the 
+            language editing features are very unlikely 
+            to trigger AI detectors, because they 
+            correct and refine text you have already 
+            written rather than generating new content. 
+            Your words, sentence structures, and 
+            arguments remain yours. The generative 
+            features — Abstract Generator, Title 
+            Generator, and TeXGPT — do produce 
+            AI-generated text and should be reviewed 
+            and personalised before submission. Most 
+            journals distinguish between AI-assisted 
+            editing (generally acceptable without 
+            disclosure) and AI-generated content 
+            (requires disclosure). Writefull's core 
+            use case falls into the former category 
+            for the majority of users.</p>
 
             <div id="drawbacks" class="not-prose my-16 p-8 bg-ink/[0.03] border-l-4 border-terracotta rounded-r-2xl soft-shadow">
                 <p class="text-2xl font-serif font-bold text-ink mb-6">The "Honest Fix": Limitations</p>
                 <div class="space-y-6 text-sm leading-relaxed text-ink/85 font-sans">
-                    <p><strong>The "Formal" Bias:</strong> Writefull is fundamentally "stiff." It will try to make you sound like a PhD student even when you want to sound like a colleague. It is too formal for casual Slack messages.</p>
-                    <p><strong>Formatting Sensitivity:</strong> When using the Paraphraser on complex documents, it occasionally struggles with nested footnotes or specific mathematical symbols. Perform a final layout check.</p>
-                    <p><strong>Clinical UI:</strong> The interface is built for deep work, not dopamine. It lacks the colorful goal-setting found in Grammarly. It is a tool for a desk, not a phone.</p>
+                    <p><strong>Formal bias:</strong> Writefull is fundamentally calibrated toward formality and does not always know when to stop. It will try to formalise passages that are intentionally conversational — a Discussion section written in a more accessible register for a broader journal audience, for example. Use the Academizer selectively: accept its suggestions in Methods and Results, treat it more cautiously in Discussion and Conclusion where your own voice carries argumentative weight.</p>
+                    <p><strong>Writefull Cite and Revise are institutional-only:</strong> Two of the most practically useful features — the citation audit tool and the document-level pre-submission checker — are not available on individual Premium plans. They require an institutional licence. For independent researchers or those at smaller institutions, this is a meaningful gap. It is the clearest reason to verify institutional access before assuming you need a personal subscription.</p>
+                    <p><strong>No Google Docs integration:</strong> Writefull works in Word and Overleaf. It does not work in Google Docs, which is increasingly common in collaborative research, particularly in social sciences and interdisciplinary work. Grammarly's advantage here is real. If your team collaborates primarily in Google Docs, you will need to export to Word for Writefull to be useful, which adds friction to the workflow.</p>
+                    <p><strong>Formatting sensitivity:</strong> When using the Paraphraser on complex documents, it occasionally struggles with nested footnotes or specific mathematical symbols outside the Overleaf environment. Always perform a final layout check on heavily formatted documents after accepting suggestions.</p>
+                    <p><strong>No mobile app:</strong> The interface is built for desktop writing sessions. There is no mobile app and no meaningful phone workflow. This is a deliberate design choice — Writefull is a serious writing tool, not a notification platform — but it means the tool does not fit on-the-go editing workflows that Grammarly's mobile app supports.</p>
                 </div>
             </div>
 
@@ -318,9 +866,21 @@
             <h3>5. What is the "Academizer" and how is it different from a standard paraphraser?</h3>
             <p>A standard paraphraser (like the one in Grammarly) simply looks for synonyms to avoid repetition. Writefull’s Academizer is a specialized engine that identifies informal "spoken" English and converts it into formal, objective academic prose. For example, it will suggest changing "we found out" to "our results indicate," or "a lot of" to "a substantial number of," ensuring your tone matches the expectations of peer reviewers.</p>
 
+            <h3>6. Writefull vs Paperpal: which is better for academic writing?</h3>
+            <p>For STEM researchers and anyone working in Overleaf, Writefull is the better tool and meaningfully cheaper — $150/year vs Paperpal's ~$300/year. Paperpal's advantage is feature breadth: it includes plagiarism detection, citation generation, and translation across 50+ languages. Writefull's advantage is depth: no competing tool has the same quality of LaTeX integration. See our full <a href="/reviews/paperpal.html" class="text-terracotta hover:underline font-bold">Paperpal review</a> for the complete side-by-side.</p>
+
+            <h3>7. Will Writefull's edits trigger an AI detector?</h3>
+            <p>For the core language editing features — grammar corrections, Academizer, Paraphraser — almost certainly no. These refine text you have already written rather than replacing it. Your sentence structures, arguments, and ideas remain yours. Generative features like the Abstract Generator and TeXGPT produce AI-written text and should be reviewed and personalised before submission. Check your target journal's AI disclosure policy — requirements are evolving rapidly in 2026.</p>
+
+            <h3>8. How do I install Writefull — Word or Overleaf?</h3>
+            <p>For Word: open any document, go to Insert → Add-ins → Get Add-ins, search for Writefull, and click Add. Sign in with your Writefull account. For Overleaf: go to Account Settings, scroll to AI Features, and click Enable AI features — no browser extension needed. Check whether your institution already provides free access before creating a paid account. See the full setup guide above for step-by-step instructions for both platforms.</p>
+
+            <h3>9. Is Writefull free, or do you need Premium to use it properly?</h3>
+            <p>The free tier is genuinely usable — it covers language editing, the Academizer, Paraphraser, and core widgets across Word, Overleaf, and Writefull X, with a daily quota that resets every 24 hours. For occasional editing — one or two sections per session — it is often sufficient. Premium at $21/month or $150/year removes the daily limit entirely and unlocks unlimited TeXGPT in Overleaf. Before purchasing, check your university's software portal — institutional access includes Revise and Cite on top of everything the Premium plan offers.</p>
+
             <h2 id="verdict">Writefull 2026 Verdict: Who Should Use It (And Who Shouldn't)</h2>
             <p>Writefull is the right tool if your writing is judged by peer reviewers, journal editors, or technical committees — people who notice when your verb choices are too informal or your phrasing doesn't match disciplinary conventions. It is not the right tool if you want a generalist writing assistant for emails and everyday documents.</p>
-            <p>For PhD candidates, STEM researchers, and engineers writing for publication, Writefull catches the category of errors that Grammarly misses entirely — not spelling mistakes, but register mismatches and non-standard terminology. Start with the free Revise tool on your next draft before committing to a paid plan.</p>
+            <p>For PhD candidates, STEM researchers, and engineers writing for publication, Writefull catches the category of errors that Grammarly misses entirely — not spelling mistakes, but register mismatches and non-standard terminology. Start with the free tier on your next draft using Writefull X or the Word add-in before committing to a paid plan. If you are at a university, check your institution's software portal first — you may already have full access including Revise and Cite.</p>
 
             <!-- The Verdict Card -->
             <div class="not-prose max-w-3xl mx-auto my-20 bg-white border-2 border-terracotta/10 rounded-[40px] p-8 md:p-12 text-center text-ink soft-shadow relative">
@@ -330,7 +890,7 @@
                 </p>
                 <div class="space-y-6">
                     <a href="https://www.writefull.com/" class="inline-block px-10 py-4 bg-terracotta text-white font-sans font-bold text-lg rounded-full transition-all hover:bg-ink shadow-lg active:scale-95" target="_blank" rel="noopener">
-                        Try Writefull Revise (Free)
+                        Try Writefull Free
                     </a>
                     <p class="text-[10px] uppercase tracking-widest text-ink/85 font-bold">Implementation Score: 9.4/10</p>
                 </div>
