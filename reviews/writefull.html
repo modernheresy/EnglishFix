@@ -23,118 +23,134 @@
         white-space: nowrap; border-width: 0; }
     </style>
     <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org/",
-        "@type": ["Product", "SoftwareApplication"],
-        "name": "Writefull",
-        "image": "https://englishfix.net/reviews/writefull-screenshot.webp",
-        "description": "AI-driven writing suite trained on millions of journal articles, specifically designed for academic and technical writing.",
-        "brand": {
-          "@type": "Brand",
-          "name": "Writefull"
-        },
-        "applicationCategory": "EducationalApplication, BusinessApplication",
-        "operatingSystem": "Web, Windows, macOS, iOS, Android",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "bestRating": "5"
-        },
-        "review": {
-          "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "4.9",
-            "bestRating": "5"
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["Product", "SoftwareApplication"],
+          "@id": "https://englishfix.net/reviews/writefull.html#product",
+          "url": "https://englishfix.net/reviews/writefull.html",
+          "name": "Writefull",
+          "image": "https://englishfix.net/reviews/writefull-screenshot.webp",
+          "description": "AI-driven writing suite trained on millions of journal articles, specifically designed for academic and technical writing.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Writefull"
           },
-          "author": {
-            "@type": "Person",
-            "name": "Richard",
-            "image": "/richard.webp"
+          "applicationCategory": "EducationalApplication, BusinessApplication",
+          "operatingSystem": "Web, Windows, macOS, iOS, Android",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "150"
+          },
+          "review": {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "4.9",
+              "bestRating": "5"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Richard",
+              "image": "https://englishfix.net/richard.webp"
+            },
+            "reviewBody": "Writefull is the premier AI grammar checker for academic writing, offering unmatched native integration with Overleaf and discipline-specific suggestions that general-purpose AI tools can't match."
+          },
+          "offers": {
+            "@type": "Offer",
+            "name": "Premium Plan",
+            "price": "150.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "150.00",
+              "priceCurrency": "USD",
+              "unitText": "YEAR"
+            }
           }
         },
-        "offers": { "@type": "Offer", "name": "Premium Plan", "price": "150.00", "priceCurrency": "USD", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "150.00", "priceCurrency": "USD", "unitText": "YEAR" } }
-      },
-      {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Why should I use Writefull instead of ChatGPT for my research papers?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "While ChatGPT is a powerful generalist, it often prioritizes readability over academic rigor. Writefull is trained exclusively on millions of published journal articles, meaning its suggestions follow the specific conventions of scholarly publishing."
+        {
+          "@type": "FAQPage",
+          "@id": "https://englishfix.net/reviews/writefull.html#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Why should I use Writefull instead of ChatGPT for my research papers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "While ChatGPT is a powerful generalist, it often prioritizes readability over academic rigor. Writefull is trained exclusively on millions of published journal articles, meaning its suggestions follow the specific conventions of scholarly publishing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Writefull use my unpublished data to train its AI models?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Writefull has a strict privacy mandate: none of your text, searches, or manuscripts are stored or used to train their models. Your data is processed through an encrypted connection and instantly wiped."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does the Writefull-Overleaf integration actually work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Writefull and Overleaf share the same parent company (Digital Science). Go to Overleaf Account Settings, scroll to AI Features, and click Enable AI features. The W icon appears in your editor toolbar immediately. TeXGPT generates LaTeX code from plain English descriptions directly in your document."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is there a free version of Writefull, and do they offer student discounts?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Writefull offers a free tier with a daily usage quota. Premium costs $21/month or $150/year. Many universities including Stanford and Oxford provide free institutional licences — check your university portal before paying."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the Academizer and how is it different from a standard paraphraser?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A standard paraphraser swaps synonyms. The Academizer identifies informal spoken English and converts it into formal academic prose — adjusting vocabulary, sentence structure, and tone simultaneously. For example: we found out becomes our results indicate."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Writefull vs Paperpal: which is better for academic writing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For STEM researchers and LaTeX/Overleaf users, Writefull is the better choice with native Overleaf integration and $150/year pricing vs Paperpal's ~$300/year. Paperpal wins on feature breadth: plagiarism detection, citation generation, and 50+ language translation. Choose Writefull for LaTeX; choose Paperpal for an all-in-one research suite."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Will Writefull's edits trigger an AI detector when I submit my paper?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For core editing features — grammar corrections, Academizer, Paraphraser — almost certainly no. These refine text you wrote rather than replacing it. Generative features like Abstract Generator and TeXGPT do produce AI text and should be reviewed before submission. Check your target journal's AI disclosure policy."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I get started with Writefull — Word or Overleaf?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For Word: install the Writefull add-in from Microsoft AppSource via Insert > Add-ins > search Writefull. For Overleaf: go to Account Settings > AI Features > Enable AI features — no extension needed. Check institutional access first — 1,500+ universities provide Writefull free including Revise and Cite that individual plans exclude."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Writefull free, or do you need Premium?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Free tier includes a daily usage quota for language editing, Academizer, Paraphraser, and core widgets. Premium at $150/year removes limits and unlocks unlimited TeXGPT. University researchers should check institutional access before purchasing."
+              }
+            }
+          ]
         }
-      },
-      {
-        "@type": "Question",
-        "name": "Does Writefull use my unpublished data to train its AI models?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Writefull has a strict privacy mandate: none of your text, searches, or manuscripts are stored or used to train their models. Your data is processed through an encrypted connection and instantly wiped."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does the Writefull-Overleaf integration actually work?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Writefull and Overleaf share the same parent company (Digital Science). Go to Overleaf Account Settings, scroll to AI Features, and click Enable AI features. The W icon appears in your editor toolbar immediately. TeXGPT generates LaTeX code from plain English descriptions directly in your document."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is there a free version of Writefull, and do they offer student discounts?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Writefull offers a free tier with a daily usage quota. Premium costs $21/month or $150/year. Many universities including Stanford and Oxford provide free institutional licences — check your university portal before paying."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the Academizer and how is it different from a standard paraphraser?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A standard paraphraser swaps synonyms. The Academizer identifies informal spoken English and converts it into formal academic prose — adjusting vocabulary, sentence structure, and tone simultaneously. For example: we found out becomes our results indicate."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Writefull vs Paperpal: which is better for academic writing?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "For STEM researchers and LaTeX/Overleaf users, Writefull is the better choice with native Overleaf integration and $150/year pricing vs Paperpal's ~$300/year. Paperpal wins on feature breadth: plagiarism detection, citation generation, and 50+ language translation. Choose Writefull for LaTeX; choose Paperpal for an all-in-one research suite."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Will Writefull's edits trigger an AI detector when I submit my paper?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "For core editing features — grammar corrections, Academizer, Paraphraser — almost certainly no. These refine text you wrote rather than replacing it. Generative features like Abstract Generator and TeXGPT do produce AI text and should be reviewed before submission. Check your target journal's AI disclosure policy."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I get started with Writefull — Word or Overleaf?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "For Word: install the Writefull add-in from Microsoft AppSource via Insert > Add-ins > search Writefull. For Overleaf: go to Account Settings > AI Features > Enable AI features — no extension needed. Check institutional access first — 1,500+ universities provide Writefull free including Revise and Cite that individual plans exclude."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is Writefull free, or do you need Premium?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Free tier includes a daily usage quota for language editing, Academizer, Paraphraser, and core widgets. Premium at $150/year removes limits and unlocks unlimited TeXGPT. University researchers should check institutional access before purchasing."
-        }
-      }
-    ]
-  }
-    ]
+      ]
+    }
     </script>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "99aae5d97b1d4a72892a61d1de556eb0"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
