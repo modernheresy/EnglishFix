@@ -21,9 +21,10 @@
         .prose h1, .prose h2, .prose h3 { font-family: 'Merriweather', serif; color: #2C3E50; font-weight: 700; }
     </style>
     <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org/",
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
         "@type": ["Product", "SoftwareApplication"],
         "name": "LanguaTalk",
         "image": "/richard.webp",
@@ -55,7 +56,6 @@
         "offers": { "@type": "Offer", "name": "Free Trial Session", "price": "0.00", "priceCurrency": "USD" }
       },
       {
-        "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
           {
@@ -101,7 +101,6 @@
         ]
       },
       {
-        "@context": "https://schema.org",
         "@type": "ItemList",
         "name": "Table of Contents",
         "mainEntityOfPage": "https://englishfix.net/reviews/languatalk.html",
@@ -144,7 +143,8 @@
           }
         ]
       }
-    ]
+      ]
+    }
     </script>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "99aae5d97b1d4a72892a61d1de556eb0"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
