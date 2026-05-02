@@ -36,13 +36,18 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://englishfix.net/reviews/trinka</loc>
+    <lastmod>2026-05-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://englishfix.net/reviews/grammarly-vs-paperpal-2026</loc>
     <lastmod>2026-05-01</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://englishfix.net/library</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <priority>0.60</priority>
   </url>
   <url>
